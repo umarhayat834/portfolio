@@ -1,844 +1,2713 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#0F0715">
-<meta name="description" content="Umar Hayat is a WordPress, WooCommerce and Shopify developer in Lahore, Pakistan. Online stores, business websites, security, SEO and tracking.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Umar Hayat | WordPress, WooCommerce &amp; Shopify Developer">
-<meta property="og:description" content="Online stores and business websites built with WordPress, WooCommerce and Shopify.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F0715'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='800' text-anchor='middle' fill='%238750F7'%3EUH%3C/text%3E%3C/svg%3E">
-<title>Umar Hayat | WordPress, WooCommerce &amp; Shopify Developer</title>
-<script>document.documentElement.classList.add("js");</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<style>
-@property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
-:root{
-  color-scheme:dark;
-  --bg:#0F0715; --bg2:#160C22; --surface:#1C112B; --surface2:#251741;
-  --line:rgba(255,255,255,.09); --ink:#F6F2FF; --text:#D2C7E8; --muted:#A293C4;
-  --vio:#8750F7; --vio2:#A855F7; --pink:#D946EF; --soft:#C4B5FD; --on-vio:#FFFFFF; --wa:#25D366;
-  --grad:linear-gradient(135deg,var(--vio),var(--vio2) 55%,var(--pink));
-  --glow:0 0 0 1px rgba(135,80,247,.38),0 24px 64px -18px rgba(135,80,247,.5);
-  --r-sm:12px; --r-md:16px; --r-lg:24px; --ease:cubic-bezier(.22,.61,.36,1);
-  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
-}
-html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 88px);scroll-behavior:smooth;scrollbar-color:#3A2A5C var(--bg)}
-*,*::before,*::after{box-sizing:inherit}
-::selection{background:var(--vio);color:#fff}
-body{margin:0;color:var(--text);font-family:"Plus Jakarta Sans",system-ui,sans-serif;line-height:1.7;font-size:1.0625rem;overflow-x:hidden;background:radial-gradient(64rem 44rem at 88% -12%,rgba(135,80,247,.16),transparent 62%),radial-gradient(48rem 38rem at -12% 32%,rgba(217,70,239,.09),transparent 60%),var(--bg)}
-a{color:inherit}
-h1,h2,h3{color:var(--ink);font-family:"Space Grotesk","Plus Jakarta Sans",system-ui,sans-serif;font-weight:700;margin:0;line-height:1.08;letter-spacing:-.03em}
-:focus-visible{outline:3px solid var(--vio);outline-offset:3px;border-radius:10px}
-.wrap{max-width:74rem;margin:0 auto;padding:0 1.5rem}
-.skip{position:fixed;left:1rem;top:-4.5rem;z-index:300;background:var(--grad);color:#fff;font-weight:700;padding:.7rem 1.3rem;border-radius:999px;text-decoration:none;transition:top .35s var(--ease)}
-.skip:focus-visible{top:1rem}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0F0715">
+  <meta name="description"
+    content="Umar Hayat is a WordPress, WooCommerce and Shopify developer in Lahore, Pakistan. Online stores, business websites, security, SEO and tracking.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Umar Hayat | WordPress, WooCommerce &amp; Shopify Developer">
+  <meta property="og:description"
+    content="Online stores and business websites built with WordPress, WooCommerce and Shopify.">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F0715'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='800' text-anchor='middle' fill='%238750F7'%3EUH%3C/text%3E%3C/svg%3E">
+  <title>Umar Hayat | WordPress, WooCommerce &amp; Shopify Developer</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    @property --ang {
+      syntax: "<angle>";
+      inherits: false;
+      initial-value: 0deg
+    }
 
-/* progress + cursor glow */
-.progress{position:fixed;left:0;top:0;right:0;height:3px;z-index:120;background:var(--grad);transform:scaleX(var(--p,0));transform-origin:left;pointer-events:none}
-.cursor{position:fixed;left:0;top:0;width:34rem;height:34rem;margin:-17rem 0 0 -17rem;z-index:5;pointer-events:none;background:radial-gradient(closest-side,rgba(135,80,247,.10),transparent);opacity:0;transition:opacity .4s}
-.cursor.on{opacity:1}
+    :root {
+      color-scheme: dark;
+      --bg: #0F0715;
+      --bg2: #160C22;
+      --surface: #1C112B;
+      --surface2: #251741;
+      --line: rgba(255, 255, 255, .09);
+      --ink: #F6F2FF;
+      --text: #D2C7E8;
+      --muted: #A293C4;
+      --vio: #8750F7;
+      --vio2: #A855F7;
+      --pink: #D946EF;
+      --soft: #C4B5FD;
+      --on-vio: #FFFFFF;
+      --wa: #25D366;
+      --grad: linear-gradient(135deg, var(--vio), var(--vio2) 55%, var(--pink));
+      --glow: 0 0 0 1px rgba(135, 80, 247, .38), 0 24px 64px -18px rgba(135, 80, 247, .5);
+      --r-sm: 12px;
+      --r-md: 16px;
+      --r-lg: 24px;
+      --ease: cubic-bezier(.22, .61, .36, 1);
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
 
-/* header */
-.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:rgba(15,7,21,.55);-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5);border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
-.hdr.scrolled{background:rgba(15,7,21,.85);border-color:var(--line)}
-.hdr .wrap{position:relative;display:flex;align-items:center;justify-content:space-between;gap:1rem;height:80px;transition:height .3s var(--ease)}
-.hdr.scrolled .wrap{height:64px}
-.logo{font-family:"Space Grotesk",sans-serif;font-size:1.55rem;font-weight:700;letter-spacing:-.03em;text-decoration:none;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--vio)}
-.menu{display:flex;align-items:center;gap:.25rem}
-.menu a.l{position:relative;text-decoration:none;font-weight:600;font-size:.98rem;color:var(--text);padding:.45rem .95rem;border-radius:999px;transition:color .2s,background .2s,box-shadow .2s}
-.menu a.l:hover{color:var(--ink);background:rgba(255,255,255,.07)}
-.menu a.l.active{color:var(--ink);background:rgba(135,80,247,.16);box-shadow:inset 0 0 0 1px rgba(135,80,247,.5)}
-.acts{display:flex;align-items:center;gap:.7rem}
-.wa-btn{display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:var(--grad);color:#fff;box-shadow:0 8px 24px -8px rgba(135,80,247,.8);transition:box-shadow .3s,transform .3s var(--ease)}
-.wa-btn:hover{box-shadow:0 0 0 6px rgba(135,80,247,.18),0 10px 26px -6px rgba(135,80,247,.9);transform:translateY(-2px)}
-.wa-btn svg{width:1.6rem;height:1.6rem}
-.burger{display:none;place-items:center;width:3rem;height:3rem;border-radius:50%;border:1.5px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;transition:border-color .25s,background .25s}
-.burger:hover{border-color:var(--vio);background:rgba(135,80,247,.12)}
-.burger .bars{position:relative;width:1.25rem;height:2px;background:currentColor;border-radius:2px;transition:background .25s}
-.burger .bars::before,.burger .bars::after{content:"";position:absolute;left:0;width:100%;height:2px;background:currentColor;border-radius:2px;transition:transform .3s var(--ease),top .3s var(--ease)}
-.burger .bars::before{top:-6px}
-.burger .bars::after{top:6px}
-.menu-open .burger .bars{background:transparent}
-.menu-open .burger .bars::before{top:0;transform:rotate(45deg)}
-.menu-open .burger .bars::after{top:0;transform:rotate(-45deg)}
+    html {
+      scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 88px);
+      scroll-behavior: smooth;
+      scrollbar-color: #3A2A5C var(--bg)
+    }
 
-/* buttons */
-.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.95rem 1.9rem;border-radius:999px;font:inherit;font-weight:700;font-size:1rem;text-decoration:none;cursor:pointer;border:2px solid var(--vio);background:transparent;color:var(--ink);transition:transform .2s var(--ease),box-shadow .3s,border-color .2s,color .2s}
-.btn::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-130%);transition:transform .7s var(--ease)}
-.btn:hover::after{transform:translateX(130%)}
-.btn:hover{transform:translateY(-2px)}
-.btn:active{transform:translateY(1px) scale(.97)}
-.btn[hidden]{display:none}
-.btn.fill{background:var(--grad);border-color:transparent;color:var(--on-vio);box-shadow:0 10px 32px -10px rgba(135,80,247,.75)}
-.btn.fill:hover{box-shadow:0 16px 44px -8px rgba(168,85,247,.95)}
-.btn.out{border-color:var(--line);color:var(--ink)}
-.btn.out:hover{border-color:var(--vio);color:var(--soft)}
-.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit
+    }
 
-/* hero */
-.hero{position:relative;overflow:hidden;padding:6.5rem 0 5.5rem}
-.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 72% 68% at 60% 32%,#000 18%,transparent 78%);mask-image:radial-gradient(ellipse 72% 68% at 60% 32%,#000 18%,transparent 78%);pointer-events:none}
-.blob{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;translate:0 calc(var(--py,0) * 1px)}
-.b1{width:36rem;height:36rem;background:rgba(135,80,247,.34);right:-8rem;top:-10rem;animation:d1 18s ease-in-out infinite alternate}
-.b2{width:30rem;height:30rem;background:rgba(217,70,239,.22);left:-10rem;top:12rem;animation:d2 22s ease-in-out infinite alternate}
-.b3{width:26rem;height:26rem;background:rgba(168,85,247,.26);right:20%;bottom:-12rem;animation:d3 20s ease-in-out infinite alternate}
-@keyframes d1{to{transform:translate(-9rem,6rem) scale(1.18)}}
-@keyframes d2{to{transform:translate(9rem,-5rem) scale(1.1)}}
-@keyframes d3{to{transform:translate(-7rem,-4rem) scale(1.25)}}
-.herogrid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:4rem;align-items:center}
-.tag{display:inline-flex;align-items:center;gap:.55rem;font-weight:700;font-size:.92rem;color:var(--soft);background:rgba(135,80,247,.12);border:1px solid rgba(135,80,247,.4);padding:.45rem 1.15rem;border-radius:999px;margin-bottom:1.5rem}
-.tag::before{content:"";width:.55rem;height:.55rem;border-radius:50%;background:var(--vio);box-shadow:0 0 12px var(--vio);animation:pulse 2.4s ease-in-out infinite}
-@keyframes pulse{50%{opacity:.45}}
-.js .tag,.js .hero p.lead,.js .hero .btns,.js .cue{opacity:0;translate:0 18px;transition:opacity .8s var(--ease),translate .8s var(--ease)}
-.js .hero.go .tag{opacity:1;translate:0 0}
-.js .hero.go p.lead{opacity:1;translate:0 0;transition-delay:.7s}
-.js .hero.go .btns{opacity:1;translate:0 0;transition-delay:.9s}
-.js .hero.go .cue{opacity:1;translate:0 0;transition-delay:1.15s}
-.hero h1{font-size:clamp(2.5rem,5.8vw,4.6rem);max-width:15ch}
-.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}
-.w>span{display:inline-block;transform:translateY(110%);transition:transform .9s var(--ease);transition-delay:calc(var(--i) * 110ms + 150ms)}
-.hero h1.ready .w>span{transform:none}
-.w.g>span{background:linear-gradient(100deg,var(--soft),var(--vio2),var(--pink),var(--soft));background-size:250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--vio2);animation:shimmer 6s linear infinite}
-@keyframes shimmer{to{background-position:250% 0}}
-.hero p.lead{font-size:1.18rem;max-width:52ch;margin:1.6rem 0 2.2rem}
-.cue{position:absolute;left:50%;bottom:1.2rem;margin-left:-1.45rem;z-index:2;display:grid;place-items:center;width:2.9rem;height:2.9rem;border-radius:50%;border:1px solid var(--line);color:var(--soft);background:rgba(28,17,43,.6);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);animation:cuebob 2.2s ease-in-out infinite;transition:border-color .3s,color .3s}
-.cue:hover{border-color:var(--vio);color:var(--ink)}
-.cue svg{width:1.2rem;height:1.2rem}
-@keyframes cuebob{50%{transform:translateY(8px)}}
+    ::selection {
+      background: var(--vio);
+      color: #fff
+    }
 
-.me-wrap{position:relative;justify-self:end;width:100%;max-width:21rem;padding:5px;border-radius:calc(var(--r-lg) + 5px);background:conic-gradient(from var(--ang),var(--vio),var(--pink),var(--soft),var(--vio));animation:spin 8s linear infinite,float 7s ease-in-out infinite;box-shadow:0 0 80px -12px rgba(135,80,247,.55)}
-@keyframes spin{to{--ang:360deg}}
-@keyframes float{50%{translate:0 -12px}}
-.me{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-lg)}
-.fchip{position:absolute;z-index:2;display:flex;align-items:center;gap:.5rem;padding:.5rem 1rem;border-radius:999px;background:rgba(28,17,43,.85);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid var(--line);color:var(--ink);font-weight:700;font-size:.9rem;box-shadow:0 14px 34px -14px rgba(0,0,0,.7);animation:bob 5s ease-in-out infinite}
-.fchip::before{content:"";width:.55rem;height:.55rem;border-radius:50%;background:var(--vio);box-shadow:0 0 10px var(--vio)}
-.fchip.c1{left:-2.2rem;top:18%}
-.fchip.c2{right:-1.6rem;top:46%;animation-delay:-1.6s}
-.fchip.c2::before{background:var(--pink);box-shadow:0 0 10px var(--pink)}
-.fchip.c3{left:1.2rem;bottom:-1rem;animation-delay:-3.2s}
-.fchip.c3::before{background:var(--soft);box-shadow:0 0 10px var(--soft)}
-@keyframes bob{50%{transform:translateY(-9px)}}
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      overflow-x: hidden;
+      background: radial-gradient(64rem 44rem at 88% -12%, rgba(135, 80, 247, .16), transparent 62%), radial-gradient(48rem 38rem at -12% 32%, rgba(217, 70, 239, .09), transparent 60%), var(--bg)
+    }
 
-.facts{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);margin-top:4.5rem;border:1px solid var(--line);border-radius:var(--r-lg);background:rgba(28,17,43,.55);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);overflow:hidden}
-.facts div{padding:1.5rem 1.7rem;border-left:1px solid var(--line);transition:background .3s}
-.facts div:hover{background:rgba(135,80,247,.08)}
-.facts div:first-child{border-left:0}
-.facts b{display:block;font-family:"Space Grotesk",sans-serif;font-size:1.7rem;line-height:1.2;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--vio2)}
-.facts span{font-size:.93rem;color:var(--muted)}
+    a {
+      color: inherit
+    }
 
-/* marquee */
-.marq{overflow:hidden;border-block:1px solid var(--line);background:rgba(22,12,34,.7);padding:1.15rem 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.track{display:flex;gap:3rem;width:max-content;animation:slide 38s linear infinite}
-.marq:hover .track{animation-play-state:paused}
-.track span{display:flex;align-items:center;gap:3rem;white-space:nowrap;font-size:1.3rem;font-weight:700;color:var(--muted)}
-.track span::after{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--grad)}
-@keyframes slide{to{transform:translateX(-50%)}}
+    h1,
+    h2,
+    h3 {
+      color: var(--ink);
+      font-family: "Space Grotesk", "Plus Jakarta Sans", system-ui, sans-serif;
+      font-weight: 700;
+      margin: 0;
+      line-height: 1.08;
+      letter-spacing: -.03em
+    }
 
-/* sections */
-section{padding:7rem 0;content-visibility:auto;contain-intrinsic-size:auto 900px}
-.kicker{display:flex;align-items:center;gap:.7rem;color:var(--soft);font-weight:700;margin:0 0 .7rem;text-transform:uppercase;letter-spacing:.14em;font-size:.85rem}
-.kicker::before{content:"";width:2.2rem;height:2px;background:var(--grad);border-radius:2px}
-section h2{font-size:clamp(2rem,4.4vw,3.1rem);margin-bottom:1rem}
-.sub{color:var(--muted);max-width:56ch;margin:0 0 3.2rem}
-.alt{background:var(--bg2);border-block:1px solid var(--line)}
-.js .reveal{opacity:0;translate:0 30px;filter:blur(8px)}
-.reveal{transition:opacity .8s var(--ease) var(--d,0ms),translate .8s var(--ease) var(--d,0ms),filter .8s var(--ease) var(--d,0ms),transform .35s var(--ease),border-color .3s,box-shadow .3s}
-.js .reveal.shown{opacity:1;translate:0 0;filter:blur(0)}
+    :focus-visible {
+      outline: 3px solid var(--vio);
+      outline-offset: 3px;
+      border-radius: 10px
+    }
 
-/* spotlight cards */
-.spot{position:relative}
-.spot::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .35s;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),rgba(135,80,247,.16),transparent 45%)}
-.spot:hover::after{opacity:1}
+    .wrap {
+      max-width: 74rem;
+      margin: 0 auto;
+      padding: 0 1.5rem
+    }
 
-/* work */
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.7rem}
-.proj{position:relative;display:flex;flex-direction:column;overflow:hidden;background:linear-gradient(180deg,var(--surface),var(--bg2));border:1px solid var(--line);border-radius:var(--r-lg);transform:perspective(950px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--lift,0px))}
-.proj::before{content:"";position:absolute;inset:0 0 auto;height:3px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease);z-index:3}
-.proj:hover,.proj:focus-within{--lift:-10px;border-color:rgba(135,80,247,.65);box-shadow:var(--glow)}
-.proj:hover::before,.proj:focus-within::before{transform:scaleX(1)}
-.shot{display:block;position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--bg2)}
-.shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0%;transition:object-position 1.1s var(--ease)}
-.proj:hover .shot img{object-position:50% 100%;transition:object-position 7s linear}
-.shot::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 55%,rgba(15,7,21,.55));pointer-events:none}
-.shot::after{content:"Hover to scroll the page";position:absolute;right:.7rem;bottom:.7rem;z-index:2;font-size:.78rem;font-weight:700;color:var(--ink);background:rgba(15,7,21,.8);border:1px solid var(--line);border-radius:999px;padding:.2rem .7rem;opacity:0;transition:opacity .3s}
-.proj:hover .shot::after{opacity:1}
-.pbody{position:relative;display:flex;flex-direction:column;flex:1;padding:1.7rem 1.8rem 1.9rem}
-.pill{align-self:flex-start;font-size:.88rem;font-weight:600;color:var(--soft);background:rgba(135,80,247,.12);border:1px solid rgba(135,80,247,.45);border-radius:999px;padding:.3rem 1rem;margin-bottom:1.1rem}
-.proj h3{font-size:1.5rem;margin-bottom:.6rem}
-.proj p{margin:0 0 1.3rem;font-size:1rem;color:var(--muted)}
-.links{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-top:auto;position:relative;z-index:1}
-.links a{display:inline-flex;align-items:center;gap:.5rem;color:var(--soft);font-weight:700;font-size:.95rem;text-decoration:none}
-.links a::after{content:"\2192";transition:transform .3s var(--ease)}
-.links a:hover::after{transform:translateX(6px)}
+    .skip {
+      position: fixed;
+      left: 1rem;
+      top: -4.5rem;
+      z-index: 300;
+      background: var(--grad);
+      color: #fff;
+      font-weight: 700;
+      padding: .7rem 1.3rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: top .35s var(--ease)
+    }
 
-/* services */
-.grid4{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
-.svc{display:grid;grid-template-columns:auto 1fr;gap:1.4rem;padding:2rem;background:linear-gradient(160deg,var(--surface),rgba(22,12,34,.6));border:1px solid var(--line);border-radius:var(--r-lg)}
-.svc:hover{transform:translateY(-6px);border-color:rgba(135,80,247,.55);box-shadow:var(--glow)}
-.ic{display:grid;place-items:center;width:3.5rem;height:3.5rem;border-radius:var(--r-md);background:var(--grad);color:#fff;box-shadow:0 10px 24px -10px rgba(135,80,247,.8);transition:transform .5s var(--ease)}
-.svc:hover .ic{transform:rotate(-8deg) scale(1.12)}
-.ic svg{width:1.7rem;height:1.7rem}
-.svc h3{font-size:1.3rem;margin-bottom:.5rem}
-.svc p{margin:0;font-size:1rem;color:var(--muted)}
+    .skip:focus-visible {
+      top: 1rem
+    }
 
+    /* progress + cursor glow */
+    .progress {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      height: 3px;
+      z-index: 120;
+      background: var(--grad);
+      transform: scaleX(var(--p, 0));
+      transform-origin: left;
+      pointer-events: none
+    }
+
+    .cursor {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 34rem;
+      height: 34rem;
+      margin: -17rem 0 0 -17rem;
+      z-index: 5;
+      pointer-events: none;
+      background: radial-gradient(closest-side, rgba(135, 80, 247, .10), transparent);
+      opacity: 0;
+      transition: opacity .4s
+    }
+
+    .cursor.on {
+      opacity: 1
+    }
+
+    /* header */
+    .hdr {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 60;
+      background: rgba(15, 7, 21, .55);
+      -webkit-backdrop-filter: blur(18px) saturate(1.5);
+      backdrop-filter: blur(18px) saturate(1.5);
+      border-bottom: 1px solid transparent;
+      transition: background .3s, border-color .3s
+    }
+
+    .hdr.scrolled {
+      background: rgba(15, 7, 21, .85);
+      border-color: var(--line)
+    }
+
+    .hdr .wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      height: 80px;
+      transition: height .3s var(--ease)
+    }
+
+    .hdr.scrolled .wrap {
+      height: 64px
+    }
+
+    .logo {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      letter-spacing: -.03em;
+      text-decoration: none;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: var(--vio)
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: .25rem
+    }
+
+    .menu a.l {
+      position: relative;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .98rem;
+      color: var(--text);
+      padding: .45rem .95rem;
+      border-radius: 999px;
+      transition: color .2s, background .2s, box-shadow .2s
+    }
+
+    .menu a.l:hover {
+      color: var(--ink);
+      background: rgba(255, 255, 255, .07)
+    }
+
+    .menu a.l.active {
+      color: var(--ink);
+      background: rgba(135, 80, 247, .16);
+      box-shadow: inset 0 0 0 1px rgba(135, 80, 247, .5)
+    }
+
+    .acts {
+      display: flex;
+      align-items: center;
+      gap: .7rem
+    }
+
+    .wa-btn {
+      display: grid;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background: var(--grad);
+      color: #fff;
+      box-shadow: 0 8px 24px -8px rgba(135, 80, 247, .8);
+      transition: box-shadow .3s, transform .3s var(--ease)
+    }
+
+    .wa-btn:hover {
+      box-shadow: 0 0 0 6px rgba(135, 80, 247, .18), 0 10px 26px -6px rgba(135, 80, 247, .9);
+      transform: translateY(-2px)
+    }
+
+    .wa-btn svg {
+      width: 1.6rem;
+      height: 1.6rem
+    }
+
+    .burger {
+      display: none;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 1.5px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      transition: border-color .25s, background .25s
+    }
+
+    .burger:hover {
+      border-color: var(--vio);
+      background: rgba(135, 80, 247, .12)
+    }
+
+    .burger .bars {
+      position: relative;
+      width: 1.25rem;
+      height: 2px;
+      background: currentColor;
+      border-radius: 2px;
+      transition: background .25s
+    }
+
+    .burger .bars::before,
+    .burger .bars::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: currentColor;
+      border-radius: 2px;
+      transition: transform .3s var(--ease), top .3s var(--ease)
+    }
+
+    .burger .bars::before {
+      top: -6px
+    }
+
+    .burger .bars::after {
+      top: 6px
+    }
+
+    .menu-open .burger .bars {
+      background: transparent
+    }
+
+    .menu-open .burger .bars::before {
+      top: 0;
+      transform: rotate(45deg)
+    }
+
+    .menu-open .burger .bars::after {
+      top: 0;
+      transform: rotate(-45deg)
+    }
+
+    /* buttons */
+    .btn {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      padding: .95rem 1.9rem;
+      border-radius: 999px;
+      font: inherit;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid var(--vio);
+      background: transparent;
+      color: var(--ink);
+      transition: transform .2s var(--ease), box-shadow .3s, border-color .2s, color .2s
+    }
+
+    .btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, .35) 50%, transparent 70%);
+      transform: translateX(-130%);
+      transition: transform .7s var(--ease)
+    }
+
+    .btn:hover::after {
+      transform: translateX(130%)
+    }
+
+    .btn:hover {
+      transform: translateY(-2px)
+    }
+
+    .btn:active {
+      transform: translateY(1px) scale(.97)
+    }
+
+    .btn[hidden] {
+      display: none
+    }
+
+    .btn.fill {
+      background: var(--grad);
+      border-color: transparent;
+      color: var(--on-vio);
+      box-shadow: 0 10px 32px -10px rgba(135, 80, 247, .75)
+    }
+
+    .btn.fill:hover {
+      box-shadow: 0 16px 44px -8px rgba(168, 85, 247, .95)
+    }
+
+    .btn.out {
+      border-color: var(--line);
+      color: var(--ink)
+    }
+
+    .btn.out:hover {
+      border-color: var(--vio);
+      color: var(--soft)
+    }
+
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .8rem
+    }
+
+    /* hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 6.5rem 0 5.5rem
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      -webkit-mask-image: radial-gradient(ellipse 72% 68% at 60% 32%, #000 18%, transparent 78%);
+      mask-image: radial-gradient(ellipse 72% 68% at 60% 32%, #000 18%, transparent 78%);
+      pointer-events: none
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+      translate: 0 calc(var(--py, 0) * 1px)
+    }
+
+    .b1 {
+      width: 36rem;
+      height: 36rem;
+      background: rgba(135, 80, 247, .34);
+      right: -8rem;
+      top: -10rem;
+      animation: d1 18s ease-in-out infinite alternate
+    }
+
+    .b2 {
+      width: 30rem;
+      height: 30rem;
+      background: rgba(217, 70, 239, .22);
+      left: -10rem;
+      top: 12rem;
+      animation: d2 22s ease-in-out infinite alternate
+    }
+
+    .b3 {
+      width: 26rem;
+      height: 26rem;
+      background: rgba(168, 85, 247, .26);
+      right: 20%;
+      bottom: -12rem;
+      animation: d3 20s ease-in-out infinite alternate
+    }
+
+    @keyframes d1 {
+      to {
+        transform: translate(-9rem, 6rem) scale(1.18)
+      }
+    }
+
+    @keyframes d2 {
+      to {
+        transform: translate(9rem, -5rem) scale(1.1)
+      }
+    }
+
+    @keyframes d3 {
+      to {
+        transform: translate(-7rem, -4rem) scale(1.25)
+      }
+    }
+
+    .herogrid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 4rem;
+      align-items: center
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      font-weight: 700;
+      font-size: .92rem;
+      color: var(--soft);
+      background: rgba(135, 80, 247, .12);
+      border: 1px solid rgba(135, 80, 247, .4);
+      padding: .45rem 1.15rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem
+    }
+
+    .tag::before {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      border-radius: 50%;
+      background: var(--vio);
+      box-shadow: 0 0 12px var(--vio);
+      animation: pulse 2.4s ease-in-out infinite
+    }
+
+    @keyframes pulse {
+      50% {
+        opacity: .45
+      }
+    }
+
+    .js .tag,
+    .js .hero p.lead,
+    .js .hero .btns,
+    .js .cue {
+      opacity: 0;
+      translate: 0 18px;
+      transition: opacity .8s var(--ease), translate .8s var(--ease)
+    }
+
+    .js .hero.go .tag {
+      opacity: 1;
+      translate: 0 0
+    }
+
+    .js .hero.go p.lead {
+      opacity: 1;
+      translate: 0 0;
+      transition-delay: .7s
+    }
+
+    .js .hero.go .btns {
+      opacity: 1;
+      translate: 0 0;
+      transition-delay: .9s
+    }
+
+    .js .hero.go .cue {
+      opacity: 1;
+      translate: 0 0;
+      transition-delay: 1.15s
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5.8vw, 4.6rem);
+      max-width: 15ch
+    }
+
+    .w {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: top;
+      padding-bottom: .12em;
+      margin-bottom: -.12em
+    }
+
+    .w>span {
+      display: inline-block;
+      transform: translateY(110%);
+      transition: transform .9s var(--ease);
+      transition-delay: calc(var(--i) * 110ms + 150ms)
+    }
+
+    .hero h1.ready .w>span {
+      transform: none
+    }
+
+    .w.g>span {
+      background: linear-gradient(100deg, var(--soft), var(--vio2), var(--pink), var(--soft));
+      background-size: 250% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: var(--vio2);
+      animation: shimmer 6s linear infinite
+    }
+
+    @keyframes shimmer {
+      to {
+        background-position: 250% 0
+      }
+    }
+
+    .hero p.lead {
+      font-size: 1.18rem;
+      max-width: 52ch;
+      margin: 1.6rem 0 2.2rem
+    }
+
+    .cue {
+      position: absolute;
+      left: 50%;
+      bottom: 1.2rem;
+      margin-left: -1.45rem;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      width: 2.9rem;
+      height: 2.9rem;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      color: var(--soft);
+      background: rgba(28, 17, 43, .6);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      animation: cuebob 2.2s ease-in-out infinite;
+      transition: border-color .3s, color .3s
+    }
+
+    .cue:hover {
+      border-color: var(--vio);
+      color: var(--ink)
+    }
+
+    .cue svg {
+      width: 1.2rem;
+      height: 1.2rem
+    }
+
+    @keyframes cuebob {
+      50% {
+        transform: translateY(8px)
+      }
+    }
+
+    .me-wrap {
+      position: relative;
+      justify-self: end;
+      width: 100%;
+      max-width: 21rem;
+      padding: 5px;
+      border-radius: calc(var(--r-lg) + 5px);
+      background: conic-gradient(from var(--ang), var(--vio), var(--pink), var(--soft), var(--vio));
+      animation: spin 8s linear infinite, float 7s ease-in-out infinite;
+      box-shadow: 0 0 80px -12px rgba(135, 80, 247, .55)
+    }
+
+    @keyframes spin {
+      to {
+        --ang: 360deg
+      }
+    }
+
+    @keyframes float {
+      50% {
+        translate: 0 -12px
+      }
+    }
+
+    .me {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: var(--r-lg)
+    }
+
+    .fchip {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .5rem 1rem;
+      border-radius: 999px;
+      background: rgba(28, 17, 43, .85);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      font-weight: 700;
+      font-size: .9rem;
+      box-shadow: 0 14px 34px -14px rgba(0, 0, 0, .7);
+      animation: bob 5s ease-in-out infinite
+    }
+
+    .fchip::before {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      border-radius: 50%;
+      background: var(--vio);
+      box-shadow: 0 0 10px var(--vio)
+    }
+
+    .fchip.c1 {
+      left: -2.2rem;
+      top: 18%
+    }
+
+    .fchip.c2 {
+      right: -1.6rem;
+      top: 46%;
+      animation-delay: -1.6s
+    }
+
+    .fchip.c2::before {
+      background: var(--pink);
+      box-shadow: 0 0 10px var(--pink)
+    }
+
+    .fchip.c3 {
+      left: 1.2rem;
+      bottom: -1rem;
+      animation-delay: -3.2s
+    }
+
+    .fchip.c3::before {
+      background: var(--soft);
+      box-shadow: 0 0 10px var(--soft)
+    }
+
+    @keyframes bob {
+      50% {
+        transform: translateY(-9px)
+      }
+    }
+
+    .facts {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 4.5rem;
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      background: rgba(28, 17, 43, .55);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      overflow: hidden
+    }
+
+    .facts div {
+      padding: 1.5rem 1.7rem;
+      border-left: 1px solid var(--line);
+      transition: background .3s
+    }
+
+    .facts div:hover {
+      background: rgba(135, 80, 247, .08)
+    }
+
+    .facts div:first-child {
+      border-left: 0
+    }
+
+    .facts b {
+      display: block;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.7rem;
+      line-height: 1.2;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: var(--vio2)
+    }
+
+    .facts span {
+      font-size: .93rem;
+      color: var(--muted)
+    }
+
+    /* marquee */
+    .marq {
+      overflow: hidden;
+      border-block: 1px solid var(--line);
+      background: rgba(22, 12, 34, .7);
+      padding: 1.15rem 0;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)
+    }
+
+    .track {
+      display: flex;
+      gap: 3rem;
+      width: max-content;
+      animation: slide 38s linear infinite
+    }
+
+    .marq:hover .track {
+      animation-play-state: paused
+    }
+
+    .track span {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      white-space: nowrap;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--muted)
+    }
+
+    .track span::after {
+      content: "";
+      width: .5rem;
+      height: .5rem;
+      border-radius: 50%;
+      background: var(--grad)
+    }
+
+    @keyframes slide {
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    /* sections */
+    section {
+      padding: 7rem 0;
+      content-visibility: auto;
+      contain-intrinsic-size: auto 900px
+    }
+
+    .kicker {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--soft);
+      font-weight: 700;
+      margin: 0 0 .7rem;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .85rem
+    }
+
+    .kicker::before {
+      content: "";
+      width: 2.2rem;
+      height: 2px;
+      background: var(--grad);
+      border-radius: 2px
+    }
+
+    section h2 {
+      font-size: clamp(2rem, 4.4vw, 3.1rem);
+      margin-bottom: 1rem
+    }
+
+    .sub {
+      color: var(--muted);
+      max-width: 56ch;
+      margin: 0 0 3.2rem
+    }
+
+    .alt {
+      background: var(--bg2);
+      border-block: 1px solid var(--line)
+    }
+
+    .js .reveal {
+      opacity: 0;
+      translate: 0 30px;
+      filter: blur(8px)
+    }
+
+    .reveal {
+      transition: opacity .8s var(--ease) var(--d, 0ms), translate .8s var(--ease) var(--d, 0ms), filter .8s var(--ease) var(--d, 0ms), transform .35s var(--ease), border-color .3s, box-shadow .3s
+    }
+
+    .js .reveal.shown {
+      opacity: 1;
+      translate: 0 0;
+      filter: blur(0)
+    }
+
+    /* spotlight cards */
+    .spot {
+      position: relative
+    }
+
+    .spot::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .35s;
+      background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 50%), rgba(135, 80, 247, .16), transparent 45%)
+    }
+
+    .spot:hover::after {
+      opacity: 1
+    }
+
+    /* work */
+    .grid3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.7rem
+    }
+
+    .proj {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: linear-gradient(180deg, var(--surface), var(--bg2));
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      transform: perspective(950px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(var(--lift, 0px))
+    }
+
+    .proj::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 3px;
+      background: var(--grad);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .5s var(--ease);
+      z-index: 3
+    }
+
+    .proj:hover,
+    .proj:focus-within {
+      --lift: -10px;
+      border-color: rgba(135, 80, 247, .65);
+      box-shadow: var(--glow)
+    }
+
+    .proj:hover::before,
+    .proj:focus-within::before {
+      transform: scaleX(1)
+    }
+
+    .shot {
+      display: block;
+      position: relative;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      background: var(--bg2)
+    }
+
+    .shot img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 0%;
+      transition: object-position 1.1s var(--ease)
+    }
+
+    .proj:hover .shot img {
+      object-position: 50% 100%;
+      transition: object-position 7s linear
+    }
+
+    .shot::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, transparent 55%, rgba(15, 7, 21, .55));
+      pointer-events: none
+    }
+
+    .shot::after {
+      content: "Hover to scroll the page";
+      position: absolute;
+      right: .7rem;
+      bottom: .7rem;
+      z-index: 2;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--ink);
+      background: rgba(15, 7, 21, .8);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: .2rem .7rem;
+      opacity: 0;
+      transition: opacity .3s
+    }
+
+    .proj:hover .shot::after {
+      opacity: 1
+    }
+
+    .pbody {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 1.7rem 1.8rem 1.9rem
+    }
+
+    .pill {
+      align-self: flex-start;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--soft);
+      background: rgba(135, 80, 247, .12);
+      border: 1px solid rgba(135, 80, 247, .45);
+      border-radius: 999px;
+      padding: .3rem 1rem;
+      margin-bottom: 1.1rem
+    }
+
+    .proj h3 {
+      font-size: 1.5rem;
+      margin-bottom: .6rem
+    }
+
+    .proj p {
+      margin: 0 0 1.3rem;
+      font-size: 1rem;
+      color: var(--muted)
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem 1.4rem;
+      margin-top: auto;
+      position: relative;
+      z-index: 1
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--soft);
+      font-weight: 700;
+      font-size: .95rem;
+      text-decoration: none
+    }
+
+    .links a::after {
+      content: "\2192";
+      transition: transform .3s var(--ease)
+    }
+
+    .links a:hover::after {
+      transform: translateX(6px)
+    }
+
+    /* services */
+    .grid4 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem
+    }
+
+    .svc {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.4rem;
+      padding: 2rem;
+      background: linear-gradient(160deg, var(--surface), rgba(22, 12, 34, .6));
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg)
+    }
+
+    .svc:hover {
+      transform: translateY(-6px);
+      border-color: rgba(135, 80, 247, .55);
+      box-shadow: var(--glow)
+    }
+
+    .ic {
+      display: grid;
+      place-items: center;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: var(--r-md);
+      background: var(--grad);
+      color: #fff;
+      box-shadow: 0 10px 24px -10px rgba(135, 80, 247, .8);
+      transition: transform .5s var(--ease)
+    }
+
+    .svc:hover .ic {
+      transform: rotate(-8deg) scale(1.12)
+    }
+
+    .ic svg {
+      width: 1.7rem;
+      height: 1.7rem
+    }
+
+    .svc h3 {
+      font-size: 1.3rem;
+      margin-bottom: .5rem
+    }
+
+    .svc p {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--muted)
+    }
 /* skills */
-.sk{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem 2.6rem}
-.sk h3{display:flex;align-items:center;gap:.6rem;font-size:1rem;font-weight:700;color:var(--soft);margin-bottom:1.1rem;padding-bottom:.85rem;border-bottom:1px solid var(--line);letter-spacing:0}
-.sk h3::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--grad)}
-.chips{display:flex;flex-wrap:wrap;gap:.55rem}
-.chips span{font-weight:600;font-size:.95rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.4rem 1rem;transition:transform .25s var(--ease),border-color .25s,background .25s,box-shadow .25s}
-.chips span:hover{transform:translateY(-3px);border-color:var(--vio);background:rgba(135,80,247,.12);box-shadow:0 8px 20px -10px rgba(135,80,247,.6)}
-
-/* experience */
-.tl{position:relative;padding-left:2.4rem;max-width:56rem}
-.tl::before,.tl::after{content:"";position:absolute;left:.45rem;top:.5rem;width:2px}
-.tl::before{bottom:.5rem;background:var(--line)}
-.tl::after{height:calc((100% - 1rem) * var(--tp,1));background:var(--grad);border-radius:2px;box-shadow:0 0 14px rgba(135,80,247,.5)}
-.ev{position:relative;padding-bottom:2.6rem}
-.ev:last-child{padding-bottom:0}
-.ev::before{content:"";position:absolute;left:-2.4rem;top:.35rem;width:1rem;height:1rem;border-radius:50%;background:var(--grad);box-shadow:0 0 0 5px var(--bg),0 0 18px rgba(135,80,247,.6)}
-.when{color:var(--soft);font-weight:700;font-size:.95rem}
-.ev h3{font-size:1.5rem;margin:.3rem 0 .3rem}
-.org{color:var(--muted);margin:0 0 1rem}
-.org a{color:var(--soft);font-weight:600}
-.ev ul{margin:0;padding-left:1.2rem;color:var(--text)}
-.ev li{margin:.55rem 0}
-
-/* about */
-.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:start}
-.about-txt p{font-size:1.1rem;margin:0 0 1.25rem}
-.about-txt p:last-child{margin-bottom:0}
-.about-txt strong{color:var(--ink)}
-.about-txt a{color:var(--soft);font-weight:700}
-.about-card .btn{width:100%}
-
-/* contact */
-.contact{display:grid;grid-template-columns:1.15fr .85fr;gap:2.4rem;align-items:start}
-.panel{padding:clamp(1.5rem,3.5vw,2.4rem);background:linear-gradient(165deg,var(--surface),rgba(22,12,34,.55));border:1px solid var(--line);border-radius:var(--r-lg);transition:border-color .3s,box-shadow .3s}
-.panel:focus-within{border-color:rgba(135,80,247,.55);box-shadow:var(--glow)}
-.panel h3{font-size:1.4rem;margin-bottom:1.3rem}
-label.f{display:block;font-weight:600;font-size:.92rem;color:var(--ink);margin:0 0 .4rem}
-.in{width:100%;font:inherit;color:var(--ink);background:rgba(15,7,21,.7);border:1.5px solid var(--line);border-radius:var(--r-sm);padding:.85rem 1.05rem;margin-bottom:1.1rem;transition:border-color .2s,box-shadow .2s,transform .2s}
-.in:focus{outline:none;border-color:var(--vio);box-shadow:0 0 0 4px rgba(135,80,247,.22);transform:translateY(-2px)}
-.in::placeholder{color:#7A6C99}
-select.in option{color:#1A1030}
-textarea.in{min-height:7.5rem;resize:vertical}
-.hint{font-size:.9rem;color:var(--muted);margin:.9rem 0 0}
-.ways{list-style:none;margin:0 0 1.6rem;padding:0}
-.ways li{padding:.95rem 0;border-bottom:1px solid var(--line)}
-.ways li:last-child{border-bottom:0}
-.ways small{display:block;color:var(--muted);font-size:.88rem}
-.ways b{display:inline-flex;align-items:center;gap:.5rem;color:var(--ink);font-weight:700}
-.ways a{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--ink);text-decoration:none;word-break:break-all;transition:color .2s}
-.ways a::after{content:"\2192";color:var(--soft);transition:transform .3s var(--ease)}
-.ways a:hover{color:var(--soft)}
-.ways a:hover::after{transform:translateX(6px)}
-footer{padding:2rem 0 2.6rem;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
-footer a{color:var(--soft);font-weight:600;text-decoration:none}
-footer a:hover{text-decoration:underline}
-
-/* project brief drawer */
-html.dr-open body{overflow:hidden}
-.scrim{position:fixed;inset:0;z-index:130;background:rgba(8,3,14,.66);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s}
-.dr-open .scrim{opacity:1;visibility:visible}
-.drawer{position:fixed;top:0;right:0;bottom:0;z-index:140;width:min(30rem,100vw);display:flex;flex-direction:column;background:var(--bg2);border-left:1px solid var(--line);box-shadow:-30px 0 80px -20px rgba(0,0,0,.75);transform:translateX(102%);visibility:hidden;transition:transform .5s var(--ease),visibility .5s;padding-top:env(safe-area-inset-top,0px)}
-.dr-open .drawer{transform:none;visibility:visible}
-.dr-head{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.2rem 1.5rem;border-bottom:1px solid var(--line);background:var(--bg2)}
-.dr-head h2{font-size:1.9rem;margin:0}
-.dr-x{display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;border:2px solid var(--vio);background:transparent;color:var(--ink);cursor:pointer;transition:transform .35s var(--ease),background .2s}
-.dr-x:hover{transform:rotate(90deg);background:rgba(135,80,247,.16)}
-.dr-x svg{width:1.3rem;height:1.3rem}
-.dr-prog{padding:1rem 1.5rem 1.2rem;background:rgba(135,80,247,.08);border-bottom:1px solid var(--line)}
-.dr-prog p{margin:0;font-weight:700;color:var(--ink);font-size:.98rem}
-.meter{height:.85rem;margin-top:.7rem;border-radius:99px;background:rgba(0,0,0,.35);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden}
-.meter i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px;transition:width .5s var(--ease);box-shadow:0 0 12px rgba(135,80,247,.65)}
-.dr-body{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:1.3rem 1.5rem}
-.dr-body::-webkit-scrollbar{width:8px}
-.dr-body::-webkit-scrollbar-track{background:transparent}
-.dr-body::-webkit-scrollbar-thumb{background:rgba(135,80,247,.35);border-radius:99px}
-.dr-body::-webkit-scrollbar-thumb:hover{background:rgba(135,80,247,.6)}
-.dr-h{margin:1.5rem 0 .7rem;font-weight:800;color:var(--ink);font-size:1.05rem}
-.dr-h:first-child{margin-top:0}
-.opts{display:grid;gap:.6rem}
-.opt{position:relative;display:flex;align-items:center;gap:1rem;padding:.85rem 1rem;border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface);cursor:pointer;transition:border-color .2s,background .2s,transform .2s}
-.opt:hover{border-color:rgba(135,80,247,.55);transform:translateX(2px)}
-.opt input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
-.opt .ico{flex:none;display:grid;place-items:center;width:2.7rem;height:2.7rem;border-radius:12px;background:var(--bg);color:var(--soft)}
-.opt .ico svg{width:1.4rem;height:1.4rem}
-.opt b{display:block;color:var(--ink);line-height:1.3}
-.opt small{color:var(--muted);font-size:.85rem;line-height:1.4;display:block}
-.opt .chk{flex:none;margin-left:auto;display:grid;place-items:center;width:1.7rem;height:1.7rem;border-radius:50%;border:2px solid var(--line);color:transparent;transition:background .2s,border-color .2s,color .2s}
-.opt .chk svg{width:.9rem;height:.9rem}
-.opt input:checked ~ .chk{background:var(--vio);border-color:var(--vio);color:#fff}
-.opt input:focus-visible ~ .chk{outline:3px solid var(--vio);outline-offset:3px}
-.opt:has(input:checked){border-color:var(--vio);background:rgba(135,80,247,.1)}
-.opt.addon{border-style:dashed;border-width:2px;border-radius:var(--r-lg);background:rgba(135,80,247,.05)}
-.opt.addon .tg{flex:none;margin-left:auto;font-weight:700;font-size:.9rem;color:var(--soft);background:rgba(135,80,247,.14);border-radius:999px;padding:.25rem .9rem}
-.opt.addon .tg::before{content:"Add"}
-.opt.addon input:checked ~ .tg{background:var(--grad);color:#fff}
-.opt.addon input:checked ~ .tg::before{content:"Added"}
-.opt.addon input:focus-visible ~ .tg{outline:3px solid var(--vio);outline-offset:3px}
-.dr-body .in{margin-bottom:.9rem}
-.dr-body label.f{font-size:.88rem}
-.dr-body textarea.in{min-height:6.5rem}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
-.dr-foot{flex:0 0 auto;padding:1.1rem 1.5rem calc(1.2rem + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:var(--bg2)}
-.sumrow{display:flex;align-items:baseline;justify-content:space-between;gap:1rem}
-.sumrow span{color:var(--text)}
-.sumrow strong{font-family:"Space Grotesk",sans-serif;font-size:2.3rem;color:var(--ink);line-height:1;font-weight:700}
-.dr-hint{margin:.4rem 0 1rem;font-size:.88rem;color:var(--muted)}
-.dr-foot .btn{width:100%;margin-bottom:.7rem;padding:1.05rem 1.5rem;font-size:1.05rem}
-.dr-foot .btn:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
-.dr-foot .btn:disabled::after{display:none}
-@media (max-width:480px){.two{grid-template-columns:1fr}}
-
-/* ===== Drawer fix: give the options area room, make the footer compact ===== */
-.drawer{height:100vh;height:100dvh;max-height:100dvh}
-.dr-head{padding:.8rem 1.2rem}
-.dr-head h2{font-size:1.5rem}
-.dr-x{width:2.5rem;height:2.5rem}
-.dr-prog{padding:.7rem 1.2rem .8rem}
-.dr-body{min-height:40%;-webkit-overflow-scrolling:touch}
-.dr-foot{padding:.8rem 1.2rem calc(.8rem + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:1fr 1fr;gap:.5rem .6rem}
-.dr-foot .sumrow{grid-column:1/-1;align-items:center}
-.dr-foot .sumrow strong{font-size:1.5rem}
-.dr-foot .dr-hint{grid-column:1/-1;margin:0;font-size:.78rem;line-height:1.35}
-.dr-foot .btn{width:100%;margin:0;padding:.8rem .6rem;font-size:.92rem}
-.dr-foot .btn:disabled{opacity:.55}
-@media (max-width:480px){
-  .dr-foot{grid-template-columns:1fr}
-  .dr-foot .dr-hint{display:none}
-}
-@media (max-height:700px){
-  .dr-foot .dr-hint{display:none}
-}
-
-@media (min-width:1800px){html{font-size:112.5%}}
-@media (max-width:1024px){
-  .herogrid{gap:2.5rem}
-  .grid3{grid-template-columns:repeat(2,1fr)}
-  .sk{grid-template-columns:repeat(2,1fr)}
-}
-@media (max-width:900px){
-  .herogrid,.contact,.about-grid{grid-template-columns:1fr}
-  .me-wrap{justify-self:start;max-width:15rem}
-  .fchip.c1{left:-.4rem}
-  .fchip.c2{right:-.6rem}
-  .grid4{grid-template-columns:1fr}
-  .facts{grid-template-columns:1fr 1fr}
-  .facts div:nth-child(3){border-left:0}
-  .facts div:nth-child(n+3){border-top:1px solid var(--line)}
-  .menu{position:absolute;top:calc(100% + .6rem);left:1rem;right:1rem;display:none;flex-direction:column;align-items:stretch;gap:.2rem;background:rgba(21,11,33,.97);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:var(--r-md);padding:.6rem;box-shadow:0 30px 60px -20px rgba(0,0,0,.8)}
-  .menu a.l{padding:.8rem 1.1rem;border-radius:12px}
-  .menu-open .menu{display:flex}
-  .burger{display:grid}
-  section{padding:4.6rem 0}
-  .hero{padding:3.6rem 0 4.8rem}
-  .shot::after{display:none}
-}
+[data-c="0"]{--c1:#8750F7;--c2:#A855F7}[data-c="1"]{--c1:#D946EF;--c2:#F472B6}[data-c="2"]{--c1:#14B8A6;--c2:#34D399}[data-c="3"]{--c1:#F59E0B;--c2:#FBBF24}[data-c="4"]{--c1:#3B82F6;--c2:#60A5FA}
+.skl-bar{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.skl{display:inline-flex;align-items:center;gap:.55rem;font:inherit;font-weight:600;font-size:.92rem;color:var(--text);background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;padding:.5rem .9rem .5rem .8rem;cursor:pointer;transition:transform .3s var(--ease),border-color .3s,background .3s,box-shadow .3s}
+.skl b{width:.6rem;height:.6rem;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2));box-shadow:0 0 10px var(--c1)}
+.skl:hover{transform:translateY(-2px);color:var(--ink);border-color:var(--c1)}
+.skl[aria-pressed="true"]{color:#fff;border-color:var(--c1);background:linear-gradient(135deg,color-mix(in srgb,var(--c1) 40%,transparent),color-mix(in srgb,var(--c2) 18%,transparent));box-shadow:0 12px 26px -14px var(--c1)}
+.skm{position:relative;width:100vw;margin:1rem 0 0 calc(50% - 50vw);padding:1.6rem 0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.skm::before{content:"";position:absolute;left:50%;top:50%;width:60rem;max-width:90vw;height:14rem;translate:-50% -50%;border-radius:50%;background:radial-gradient(closest-side,rgba(135,80,247,.22),transparent);filter:blur(24px);pointer-events:none}
+.skm-band{position:relative;display:grid;gap:1rem}
+.skm-row{display:flex;width:max-content;gap:1rem;animation:skm 70s linear infinite}
+.skm-row.rev{animation-direction:reverse;animation-duration:80s}
+.skm-row.c{animation-duration:75s}
+.skm-row span{position:relative;display:inline-flex;align-items:center;gap:.75rem;white-space:nowrap;font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:1.05rem;color:var(--ink);padding:.5rem 1.3rem .5rem .5rem;border-radius:999px;background:linear-gradient(160deg,color-mix(in srgb,var(--c1) 14%,transparent),rgba(255,255,255,.02));border:1px solid color-mix(in srgb,var(--c1) 28%,transparent);transition:transform .3s var(--ease),border-color .3s,box-shadow .3s,opacity .4s,filter .4s}
+.skm-row i{display:grid;place-items:center;width:2.2rem;height:2.2rem;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;box-shadow:0 6px 16px -6px var(--c1)}
+.skm-row i svg{width:1.05rem;height:1.05rem}
+.skm-row span:hover{transform:translateY(-3px);border-color:var(--c2);box-shadow:0 14px 30px -14px var(--c1)}
+.skm-row span.dim{opacity:.18;filter:saturate(0)}
+@keyframes skm{to{transform:translateX(calc(-50% - .5rem))}}
 @media (max-width:640px){
-  .grid3,.sk{grid-template-columns:1fr}
-}
-@media (max-width:480px){
-  .wrap{padding:0 1rem}
-  .hdr .btn{display:none}
-  .svc{grid-template-columns:1fr}
-  .facts{grid-template-columns:1fr}
-  .facts div{border-left:0;border-top:1px solid var(--line)}
-  .facts div:first-child{border-top:0}
-  .fchip{font-size:.8rem;padding:.4rem .8rem}
+  .skl-bar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .skl-bar::-webkit-scrollbar{display:none}.skl{flex:none}
+  .skm-row,.skm-band{gap:.7rem}
+  .skm-row span{font-size:.95rem;gap:.55rem}.skm-row i{width:2rem;height:2rem}
 }
 @media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-  .js .reveal,.js .tag,.js .hero p.lead,.js .hero .btns,.js .cue{opacity:1;translate:none;filter:none}
-  .w>span{transform:none}
-  .cursor{display:none}
-  .proj:hover,.svc:hover,.btn:hover,.chips span:hover{transform:none}
-  .proj:hover{--lift:0px}
-  .btn::after,.shot::after{display:none}
+  .skm{-webkit-mask-image:none;mask-image:none}
+  .skm-row{animation:none;flex-wrap:wrap;width:auto;padding:0 1.5rem}
 }
-</style>
+    /* experience */
+    .tl {
+      position: relative;
+      padding-left: 2.4rem;
+      max-width: 56rem
+    }
+
+    .tl::before,
+    .tl::after {
+      content: "";
+      position: absolute;
+      left: .45rem;
+      top: .5rem;
+      width: 2px
+    }
+
+    .tl::before {
+      bottom: .5rem;
+      background: var(--line)
+    }
+
+    .tl::after {
+      height: calc((100% - 1rem) * var(--tp, 1));
+      background: var(--grad);
+      border-radius: 2px;
+      box-shadow: 0 0 14px rgba(135, 80, 247, .5)
+    }
+
+    .ev {
+      position: relative;
+      padding-bottom: 2.6rem
+    }
+
+    .ev:last-child {
+      padding-bottom: 0
+    }
+
+    .ev::before {
+      content: "";
+      position: absolute;
+      left: -2.4rem;
+      top: .35rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background: var(--grad);
+      box-shadow: 0 0 0 5px var(--bg), 0 0 18px rgba(135, 80, 247, .6)
+    }
+
+    .when {
+      color: var(--soft);
+      font-weight: 700;
+      font-size: .95rem
+    }
+
+    .ev h3 {
+      font-size: 1.5rem;
+      margin: .3rem 0 .3rem
+    }
+
+    .org {
+      color: var(--muted);
+      margin: 0 0 1rem
+    }
+
+    .org a {
+      color: var(--soft);
+      font-weight: 600
+    }
+
+    .ev ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--text)
+    }
+
+    .ev li {
+      margin: .55rem 0
+    }
+
+    /* about */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 3rem;
+      align-items: start
+    }
+
+    .about-txt p {
+      font-size: 1.1rem;
+      margin: 0 0 1.25rem
+    }
+
+    .about-txt p:last-child {
+      margin-bottom: 0
+    }
+
+    .about-txt strong {
+      color: var(--ink)
+    }
+
+    .about-txt a {
+      color: var(--soft);
+      font-weight: 700
+    }
+
+    .about-card .btn {
+      width: 100%
+    }
+
+    /* contact */
+    .contact {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 2.4rem;
+      align-items: start
+    }
+
+    .panel {
+      padding: clamp(1.5rem, 3.5vw, 2.4rem);
+      background: linear-gradient(165deg, var(--surface), rgba(22, 12, 34, .55));
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      transition: border-color .3s, box-shadow .3s
+    }
+
+    .panel:focus-within {
+      border-color: rgba(135, 80, 247, .55);
+      box-shadow: var(--glow)
+    }
+
+    .panel h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1.3rem
+    }
+
+    label.f {
+      display: block;
+      font-weight: 600;
+      font-size: .92rem;
+      color: var(--ink);
+      margin: 0 0 .4rem
+    }
+
+    .in {
+      width: 100%;
+      font: inherit;
+      color: var(--ink);
+      background: rgba(15, 7, 21, .7);
+      border: 1.5px solid var(--line);
+      border-radius: var(--r-sm);
+      padding: .85rem 1.05rem;
+      margin-bottom: 1.1rem;
+      transition: border-color .2s, box-shadow .2s, transform .2s
+    }
+
+    .in:focus {
+      outline: none;
+      border-color: var(--vio);
+      box-shadow: 0 0 0 4px rgba(135, 80, 247, .22);
+      transform: translateY(-2px)
+    }
+
+    .in::placeholder {
+      color: #7A6C99
+    }
+
+    select.in option {
+      color: #1A1030
+    }
+
+    textarea.in {
+      min-height: 7.5rem;
+      resize: vertical
+    }
+
+    .hint {
+      font-size: .9rem;
+      color: var(--muted);
+      margin: .9rem 0 0
+    }
+
+    .ways {
+      list-style: none;
+      margin: 0 0 1.6rem;
+      padding: 0
+    }
+
+    .ways li {
+      padding: .95rem 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .ways li:last-child {
+      border-bottom: 0
+    }
+
+    .ways small {
+      display: block;
+      color: var(--muted);
+      font-size: .88rem
+    }
+
+    .ways b {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--ink);
+      font-weight: 700
+    }
+
+    .ways a {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      word-break: break-all;
+      transition: color .2s
+    }
+
+    .ways a::after {
+      content: "\2192";
+      color: var(--soft);
+      transition: transform .3s var(--ease)
+    }
+
+    .ways a:hover {
+      color: var(--soft)
+    }
+
+    .ways a:hover::after {
+      transform: translateX(6px)
+    }
+
+    footer {
+      padding: 2rem 0 2.6rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .92rem
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: .8rem
+    }
+
+    footer a {
+      color: var(--soft);
+      font-weight: 600;
+      text-decoration: none
+    }
+
+    footer a:hover {
+      text-decoration: underline
+    }
+
+    /* project brief drawer */
+    html.dr-open body {
+      overflow: hidden
+    }
+
+    .scrim {
+      position: fixed;
+      inset: 0;
+      z-index: 130;
+      background: rgba(8, 3, 14, .66);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .4s var(--ease), visibility .4s
+    }
+
+    .dr-open .scrim {
+      opacity: 1;
+      visibility: visible
+    }
+
+    .drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 140;
+      width: min(30rem, 100vw);
+      display: flex;
+      flex-direction: column;
+      background: var(--bg2);
+      border-left: 1px solid var(--line);
+      box-shadow: -30px 0 80px -20px rgba(0, 0, 0, .75);
+      transform: translateX(102%);
+      visibility: hidden;
+      transition: transform .5s var(--ease), visibility .5s;
+      padding-top: env(safe-area-inset-top, 0px)
+    }
+
+    .dr-open .drawer {
+      transform: none;
+      visibility: visible
+    }
+
+    .dr-head {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.2rem 1.5rem;
+      border-bottom: 1px solid var(--line);
+      background: var(--bg2)
+    }
+
+    .dr-head h2 {
+      font-size: 1.9rem;
+      margin: 0
+    }
+
+    .dr-x {
+      display: grid;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 2px solid var(--vio);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      transition: transform .35s var(--ease), background .2s
+    }
+
+    .dr-x:hover {
+      transform: rotate(90deg);
+      background: rgba(135, 80, 247, .16)
+    }
+
+    .dr-x svg {
+      width: 1.3rem;
+      height: 1.3rem
+    }
+
+    .dr-prog {
+      padding: 1rem 1.5rem 1.2rem;
+      background: rgba(135, 80, 247, .08);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .dr-prog p {
+      margin: 0;
+      font-weight: 700;
+      color: var(--ink);
+      font-size: .98rem
+    }
+
+    .meter {
+      height: .85rem;
+      margin-top: .7rem;
+      border-radius: 99px;
+      background: rgba(0, 0, 0, .35);
+      box-shadow: inset 0 0 0 1px var(--line);
+      overflow: hidden
+    }
+
+    .meter i {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: var(--grad);
+      border-radius: 99px;
+      transition: width .5s var(--ease);
+      box-shadow: 0 0 12px rgba(135, 80, 247, .65)
+    }
+
+    .dr-body {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      padding: 1.3rem 1.5rem
+    }
+
+    .dr-body::-webkit-scrollbar {
+      width: 8px
+    }
+
+    .dr-body::-webkit-scrollbar-track {
+      background: transparent
+    }
+
+    .dr-body::-webkit-scrollbar-thumb {
+      background: rgba(135, 80, 247, .35);
+      border-radius: 99px
+    }
+
+    .dr-body::-webkit-scrollbar-thumb:hover {
+      background: rgba(135, 80, 247, .6)
+    }
+
+    .dr-h {
+      margin: 1.5rem 0 .7rem;
+      font-weight: 800;
+      color: var(--ink);
+      font-size: 1.05rem
+    }
+
+    .dr-h:first-child {
+      margin-top: 0
+    }
+
+    .opts {
+      display: grid;
+      gap: .6rem
+    }
+
+    .opt {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: .85rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+      background: var(--surface);
+      cursor: pointer;
+      transition: border-color .2s, background .2s, transform .2s
+    }
+
+    .opt:hover {
+      border-color: rgba(135, 80, 247, .55);
+      transform: translateX(2px)
+    }
+
+    .opt input {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      opacity: 0;
+      cursor: pointer
+    }
+
+    .opt .ico {
+      flex: none;
+      display: grid;
+      place-items: center;
+      width: 2.7rem;
+      height: 2.7rem;
+      border-radius: 12px;
+      background: var(--bg);
+      color: var(--soft)
+    }
+
+    .opt .ico svg {
+      width: 1.4rem;
+      height: 1.4rem
+    }
+
+    .opt b {
+      display: block;
+      color: var(--ink);
+      line-height: 1.3
+    }
+
+    .opt small {
+      color: var(--muted);
+      font-size: .85rem;
+      line-height: 1.4;
+      display: block
+    }
+
+    .opt .chk {
+      flex: none;
+      margin-left: auto;
+      display: grid;
+      place-items: center;
+      width: 1.7rem;
+      height: 1.7rem;
+      border-radius: 50%;
+      border: 2px solid var(--line);
+      color: transparent;
+      transition: background .2s, border-color .2s, color .2s
+    }
+
+    .opt .chk svg {
+      width: .9rem;
+      height: .9rem
+    }
+
+    .opt input:checked~.chk {
+      background: var(--vio);
+      border-color: var(--vio);
+      color: #fff
+    }
+
+    .opt input:focus-visible~.chk {
+      outline: 3px solid var(--vio);
+      outline-offset: 3px
+    }
+
+    .opt:has(input:checked) {
+      border-color: var(--vio);
+      background: rgba(135, 80, 247, .1)
+    }
+
+    .opt.addon {
+      border-style: dashed;
+      border-width: 2px;
+      border-radius: var(--r-lg);
+      background: rgba(135, 80, 247, .05)
+    }
+
+    .opt.addon .tg {
+      flex: none;
+      margin-left: auto;
+      font-weight: 700;
+      font-size: .9rem;
+      color: var(--soft);
+      background: rgba(135, 80, 247, .14);
+      border-radius: 999px;
+      padding: .25rem .9rem
+    }
+
+    .opt.addon .tg::before {
+      content: "Add"
+    }
+
+    .opt.addon input:checked~.tg {
+      background: var(--grad);
+      color: #fff
+    }
+
+    .opt.addon input:checked~.tg::before {
+      content: "Added"
+    }
+
+    .opt.addon input:focus-visible~.tg {
+      outline: 3px solid var(--vio);
+      outline-offset: 3px
+    }
+
+    .dr-body .in {
+      margin-bottom: .9rem
+    }
+
+    .dr-body label.f {
+      font-size: .88rem
+    }
+
+    .dr-body textarea.in {
+      min-height: 6.5rem
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .8rem
+    }
+
+    .dr-foot {
+      flex: 0 0 auto;
+      padding: 1.1rem 1.5rem calc(1.2rem + env(safe-area-inset-bottom, 0px));
+      border-top: 1px solid var(--line);
+      background: var(--bg2)
+    }
+
+    .sumrow {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem
+    }
+
+    .sumrow span {
+      color: var(--text)
+    }
+
+    .sumrow strong {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2.3rem;
+      color: var(--ink);
+      line-height: 1;
+      font-weight: 700
+    }
+
+    .dr-hint {
+      margin: .4rem 0 1rem;
+      font-size: .88rem;
+      color: var(--muted)
+    }
+
+    .dr-foot .btn {
+      width: 100%;
+      margin-bottom: .7rem;
+      padding: 1.05rem 1.5rem;
+      font-size: 1.05rem
+    }
+
+    .dr-foot .btn:disabled {
+      opacity: .4;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none
+    }
+
+    .dr-foot .btn:disabled::after {
+      display: none
+    }
+
+    @media (max-width:480px) {
+      .two {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* ===== Drawer fix: give the options area room, make the footer compact ===== */
+    .drawer {
+      height: 100vh;
+      height: 100dvh;
+      max-height: 100dvh
+    }
+
+    .dr-head {
+      padding: .8rem 1.2rem
+    }
+
+    .dr-head h2 {
+      font-size: 1.5rem
+    }
+
+    .dr-x {
+      width: 2.5rem;
+      height: 2.5rem
+    }
+
+    .dr-prog {
+      padding: .7rem 1.2rem .8rem
+    }
+
+    .dr-body {
+      min-height: 40%;
+      -webkit-overflow-scrolling: touch
+    }
+
+    .dr-foot {
+      padding: .8rem 1.2rem calc(.8rem + env(safe-area-inset-bottom, 0px));
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .5rem .6rem
+    }
+
+    .dr-foot .sumrow {
+      grid-column: 1/-1;
+      align-items: center
+    }
+
+    .dr-foot .sumrow strong {
+      font-size: 1.5rem
+    }
+
+    .dr-foot .dr-hint {
+      grid-column: 1/-1;
+      margin: 0;
+      font-size: .78rem;
+      line-height: 1.35
+    }
+
+    .dr-foot .btn {
+      width: 100%;
+      margin: 0;
+      padding: .8rem .6rem;
+      font-size: .92rem
+    }
+
+    .dr-foot .btn:disabled {
+      opacity: .55
+    }
+
+    @media (max-width:480px) {
+      .dr-foot {
+        grid-template-columns: 1fr
+      }
+
+      .dr-foot .dr-hint {
+        display: none
+      }
+    }
+
+    @media (max-height:700px) {
+      .dr-foot .dr-hint {
+        display: none
+      }
+    }
+
+    @media (min-width:1800px) {
+      html {
+        font-size: 112.5%
+      }
+    }
+
+    @media (max-width:1024px) {
+      .herogrid {
+        gap: 2.5rem
+      }
+
+      .grid3 {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .sk {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media (max-width:900px) {
+
+      .herogrid,
+      .contact,
+      .about-grid {
+        grid-template-columns: 1fr
+      }
+
+      .me-wrap {
+        justify-self: start;
+        max-width: 15rem
+      }
+
+      .fchip.c1 {
+        left: -.4rem
+      }
+
+      .fchip.c2 {
+        right: -.6rem
+      }
+
+      .grid4 {
+        grid-template-columns: 1fr
+      }
+
+      .facts {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .facts div:nth-child(3) {
+        border-left: 0
+      }
+
+      .facts div:nth-child(n+3) {
+        border-top: 1px solid var(--line)
+      }
+
+      .menu {
+        position: absolute;
+        top: calc(100% + .6rem);
+        left: 1rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: .2rem;
+        background: rgba(21, 11, 33, .97);
+        -webkit-backdrop-filter: blur(18px);
+        backdrop-filter: blur(18px);
+        border: 1px solid var(--line);
+        border-radius: var(--r-md);
+        padding: .6rem;
+        box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .8)
+      }
+
+      .menu a.l {
+        padding: .8rem 1.1rem;
+        border-radius: 12px
+      }
+
+      .menu-open .menu {
+        display: flex
+      }
+
+      .burger {
+        display: grid
+      }
+
+      section {
+        padding: 4.6rem 0
+      }
+
+      .hero {
+        padding: 3.6rem 0 4.8rem
+      }
+
+      .shot::after {
+        display: none
+      }
+    }
+
+    @media (max-width:640px) {
+
+      .grid3,
+      .sk {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media (max-width:480px) {
+      .wrap {
+        padding: 0 1rem
+      }
+
+      .hdr .btn {
+        display: none
+      }
+
+      .svc {
+        grid-template-columns: 1fr
+      }
+
+      .facts {
+        grid-template-columns: 1fr
+      }
+
+      .facts div {
+        border-left: 0;
+        border-top: 1px solid var(--line)
+      }
+
+      .facts div:first-child {
+        border-top: 0
+      }
+
+      .fchip {
+        font-size: .8rem;
+        padding: .4rem .8rem
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important
+      }
+
+      .js .reveal,
+      .js .tag,
+      .js .hero p.lead,
+      .js .hero .btns,
+      .js .cue {
+        opacity: 1;
+        translate: none;
+        filter: none
+      }
+
+      .w>span {
+        transform: none
+      }
+
+      .cursor {
+        display: none
+      }
+
+      .proj:hover,
+      .svc:hover,
+      .btn:hover,
+      .chips span:hover {
+        transform: none
+      }
+
+      .proj:hover {
+        --lift: 0px
+      }
+
+      .btn::after,
+      .shot::after {
+        display: none
+      }
+    }
+  </style>
 </head>
+
 <body>
-<a class="skip" href="#top">Skip to content</a>
-<div class="progress" id="bar" aria-hidden="true"></div>
-<div class="cursor" id="cursor" aria-hidden="true"></div>
+  <a class="skip" href="#top">Skip to content</a>
+  <div class="progress" id="bar" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
 
-<header class="hdr" id="hdr"><div class="wrap">
-  <a class="logo" href="#top">Umar Hayat</a>
-  <nav class="menu" id="menu" aria-label="Main">
-    <a class="l" href="#about">About</a><a class="l" href="#work">Work</a><a class="l" href="#services">Services</a><a class="l" href="#skills">Skills</a><a class="l" href="#experience">Experience</a><a class="l" href="#contact">Contact</a>
-  </nav>
-  <div class="acts">
-    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><span class="bars"></span></button>
-    <a class="wa-btn mag" href="https://wa.me/923104561634" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88z"/></svg></a>
-    <a class="btn fill mag" href="#contact" data-open="brief">Start a project</a>
-  </div>
-</div></header>
-
-<main id="top" tabindex="-1">
-<div class="hero" id="hero">
-  <div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div><div class="blob b3" aria-hidden="true"></div>
-  <div class="wrap">
-  <div class="herogrid">
-    <div>
-      <span class="tag">WordPress, WooCommerce &amp; Shopify Developer</span>
-      <h1 id="h1">WordPress and WooCommerce developer</h1>
-      <p class="lead">I build and run online stores and business websites, from product catalogue and checkout to security and marketing tracking.</p>
-      <div class="btns">
+  <header class="hdr" id="hdr">
+    <div class="wrap">
+      <a class="logo" href="#top">Umar Hayat</a>
+      <nav class="menu" id="menu" aria-label="Main">
+        <a class="l" href="#about">About</a><a class="l" href="#work">Work</a><a class="l"
+          href="#services">Services</a><a class="l" href="#skills">Skills</a><a class="l"
+          href="#experience">Experience</a><a class="l" href="#contact">Contact</a>
+      </nav>
+      <div class="acts">
+        <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu"
+          aria-label="Toggle menu"><span class="bars"></span></button>
+        <a class="wa-btn mag" href="https://wa.me/923104561634" target="_blank" rel="noopener"
+          aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88z" />
+          </svg></a>
         <a class="btn fill mag" href="#contact" data-open="brief">Start a project</a>
-        <a class="btn out" href="#work">View my work</a>
       </div>
     </div>
-    <div class="me-wrap" id="portrait">
-      <img class="me" src="images/umar-hayat.jpg" alt="Umar Hayat, WordPress and WooCommerce developer" width="640" height="800" fetchpriority="high" decoding="async">
-      <span class="fchip c1" aria-hidden="true">WooCommerce</span>
-      <span class="fchip c2" aria-hidden="true">Elementor Pro</span>
-      <span class="fchip c3" aria-hidden="true">Shopify</span>
-    </div>
-  </div>
-  <div class="facts">
-    <div class="spot"><b><span data-n="35" data-s="+">35+</span></b><span>Products in my live store</span></div>
-    <div class="spot"><b><span data-n="3">3</span></b><span>Page builders: Elementor Pro, Divi, Gutenberg</span></div>
-    <div class="spot"><b><span data-n="4">4</span></b><span>Languages: English, Urdu, Punjabi, French</span></div>
-    <div class="spot"><b>BS (Hons)</b><span>Mathematics, University of Sargodha</span></div>
-  </div>
-</div>
-  <a class="cue" href="#work" aria-label="Scroll to selected work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
-</div>
+  </header>
 
-<div class="marq" aria-hidden="true"><div class="track" id="track"></div></div>
-
-
-<section id="about"><div class="wrap">
-  <p class="kicker reveal">About me</p>
-  <h2 class="reveal">A developer who also runs a store</h2>
-  <p class="sub reveal" style="--d:60ms">Why my websites are built for real businesses, not just for show.</p>
-  <div class="about-grid">
-    <div class="about-txt reveal" style="--d:100ms">
-      <p>I&#39;m <strong>Umar Hayat</strong>, a WordPress, WooCommerce and Shopify developer based in Lahore, Pakistan. I build and run online stores and business websites, from product catalogue and checkout to security and marketing.</p>
-      <p>What makes my work practical is that I run one myself: <a href="https://comforthouse.pk" target="_blank" rel="noopener">Comfort House</a>, a live WooCommerce store selling bedsheets and comforter sets across Pakistan. I handle the catalogue, checkout, shipping, ads and day-to-day operations, so I build websites the way a business owner needs them to work.</p>
-      <p>I keep things simple and reliable: fast, mobile-friendly pages, a secure WordPress setup, and tracking that shows what your marketing is actually doing.</p>
-    </div>
-    <div class="panel spot about-card reveal" style="--d:180ms">
-      <h3>Quick facts</h3>
-      <ul class="ways">
-        <li><small>Based in</small><b>Lahore, Pakistan</b></li>
-        <li><small>Degree</small><b>BS (Hons) Mathematics, University of Sargodha</b></li>
-        <li><small>Languages</small><b>English, Urdu, Punjabi, French</b></li>
-        <li><small>Page builders</small><b>Elementor Pro, Divi, Gutenberg</b></li>
-        <li><small>Own store</small><a href="https://comforthouse.pk" target="_blank" rel="noopener">comforthouse.pk</a></li>
-      </ul>
-      <a class="btn out" href="#contact">Let&#39;s work together</a>
-    </div>
-  </div>
-</div></section>
-
-<section id="work" class="alt"><div class="wrap">
-  <p class="kicker reveal">Portfolio</p>
-  <h2 class="reveal">Selected work</h2>
-  <p class="sub reveal" style="--d:80ms">A live online store and sample websites.</p>
-  <div class="grid3">
-    <div class="proj spot reveal" style="--d:0ms">
-      <a class="shot" href="https://comforthouse.pk" target="_blank" rel="noopener" aria-label="Comfort House, live WooCommerce store selling bedding across Pakistan (opens in new tab)"><img src="images/project-comfort-house.jpg" alt="Comfort House, live WooCommerce store selling bedding across Pakistan" width="780" height="2559" loading="lazy" decoding="async"></a>
-      <div class="pbody">
-        <span class="pill">WooCommerce</span>
-        <h3>Comfort House</h3>
-        <p>My own live WooCommerce store selling bedsheets and comforter sets across Pakistan, with 35+ products and Cash on Delivery checkout.</p>
-        <div class="links"><a href="https://comforthouse.pk" target="_blank" rel="noopener">View live site</a></div>
+  <main id="top" tabindex="-1">
+    <div class="hero" id="hero">
+      <div class="blob b1" aria-hidden="true"></div>
+      <div class="blob b2" aria-hidden="true"></div>
+      <div class="blob b3" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="herogrid">
+          <div>
+            <span class="tag">WordPress, WooCommerce &amp; Shopify Developer</span>
+            <h1 id="h1">WordPress and WooCommerce developer</h1>
+            <p class="lead">I build and run online stores and business websites, from product catalogue and checkout to
+              security and marketing tracking.</p>
+            <div class="btns">
+              <a class="btn fill mag" href="#contact" data-open="brief">Start a project</a>
+              <a class="btn out" href="#work">View my work</a>
+            </div>
+          </div>
+          <div class="me-wrap" id="portrait">
+            <img class="me" src="images/umar-hayat.jpg" alt="Umar Hayat, WordPress and WooCommerce developer"
+              width="640" height="800" fetchpriority="high" decoding="async">
+            <span class="fchip c1" aria-hidden="true">WooCommerce</span>
+            <span class="fchip c2" aria-hidden="true">Elementor Pro</span>
+            <span class="fchip c3" aria-hidden="true">Shopify</span>
+          </div>
+        </div>
+        <div class="facts">
+          <div class="spot"><b><span data-n="35" data-s="+">35+</span></b><span>Products in my live store</span></div>
+          <div class="spot"><b><span data-n="3">3</span></b><span>Page builders: Elementor Pro, Divi, Gutenberg</span>
+          </div>
+          <div class="spot"><b><span data-n="4">4</span></b><span>Languages: English, Urdu, Punjabi, French</span></div>
+          <div class="spot"><b>BS (Hons)</b><span>Mathematics, University of Sargodha</span></div>
+        </div>
       </div>
+      <a class="cue" href="#work" aria-label="Scroll to selected work"><svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg></a>
     </div>
-    <div class="proj spot reveal" style="--d:120ms">
-      <a class="shot" href="https://github.com/umarhayat834/north-star-real-state" target="_blank" rel="noopener" aria-label="North Star Real Estate website with property search and featured listings (opens in new tab)"><img src="images/project-north-star.jpg" alt="North Star Real Estate website with property search and featured listings" width="779" height="2576" loading="lazy" decoding="async"></a>
-      <div class="pbody">
-        <span class="pill">Real estate</span>
-        <h3>North Star Real Estate</h3>
-        <p>A real estate website for Lahore with a property search, featured listings, and a newsletter sign-up.</p>
-        <div class="links"><a href="https://umarhayat834.github.io/north-star-real-state/" target="_blank" rel="noopener">View live site</a><a href="https://github.com/umarhayat834/north-star-real-state" target="_blank" rel="noopener">View on GitHub</a></div>
+
+    <div class="marq" aria-hidden="true">
+      <div class="track" id="track"></div>
+    </div>
+
+
+    <section id="about">
+      <div class="wrap">
+        <p class="kicker reveal">About me</p>
+        <h2 class="reveal">A developer who also runs a store</h2>
+        <p class="sub reveal" style="--d:60ms">Why my websites are built for real businesses, not just for show.</p>
+        <div class="about-grid">
+          <div class="about-txt reveal" style="--d:100ms">
+            <p>I&#39;m <strong>Umar Hayat</strong>, a WordPress, WooCommerce and Shopify developer based in Lahore,
+              Pakistan. I build and run online stores and business websites, from product catalogue and checkout to
+              security and marketing.</p>
+            <p>What makes my work practical is that I run one myself: <a href="https://comforthouse.pk" target="_blank"
+                rel="noopener">Comfort House</a>, a live WooCommerce store selling bedsheets and comforter sets across
+              Pakistan. I handle the catalogue, checkout, shipping, ads and day-to-day operations, so I build websites
+              the way a business owner needs them to work.</p>
+            <p>I keep things simple and reliable: fast, mobile-friendly pages, a secure WordPress setup, and tracking
+              that shows what your marketing is actually doing.</p>
+          </div>
+          <div class="panel spot about-card reveal" style="--d:180ms">
+            <h3>Quick facts</h3>
+            <ul class="ways">
+              <li><small>Based in</small><b>Lahore, Pakistan</b></li>
+              <li><small>Degree</small><b>BS (Hons) Mathematics, University of Sargodha</b></li>
+              <li><small>Languages</small><b>English, Urdu, Punjabi, French</b></li>
+              <li><small>Page builders</small><b>Elementor Pro, Divi, Gutenberg</b></li>
+              <li><small>Own store</small><a href="https://comforthouse.pk" target="_blank"
+                  rel="noopener">comforthouse.pk</a></li>
+            </ul>
+            <a class="btn out" href="#contact">Let&#39;s work together</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="proj spot reveal" style="--d:240ms">
-      <a class="shot" href="https://umarhayat834.github.io/Bitebox/" target="_blank" rel="noopener" aria-label="Bitebox food ordering website with menu, custom box builder and order tracking (opens in new tab)"><img src="images/project-bitebox.jpg" alt="Bitebox food ordering website with menu, custom box builder and order tracking" width="456" height="2576" loading="lazy" decoding="async"></a>
-      <div class="pbody">
-        <span class="pill">Food ordering</span>
-        <h3>Bitebox</h3>
-        <p>A food ordering website with a menu, a build-your-own-box option, a shopping bag, and order tracking.</p>
-        <div class="links"><a href="https://umarhayat834.github.io/Bitebox/" target="_blank" rel="noopener">View live site</a><a href="https://github.com/umarhayat834/Bitebox" target="_blank" rel="noopener">View on GitHub</a></div>
+    </section>
+
+    <section id="work" class="alt">
+      <div class="wrap">
+        <p class="kicker reveal">Portfolio</p>
+        <h2 class="reveal">Selected work</h2>
+        <p class="sub reveal" style="--d:80ms">A live online store and sample websites.</p>
+        <div class="grid3">
+          <div class="proj spot reveal" style="--d:0ms">
+            <a class="shot" href="https://comforthouse.pk" target="_blank" rel="noopener"
+              aria-label="Comfort House, live WooCommerce store selling bedding across Pakistan (opens in new tab)"><img
+                src="images/project-comfort-house.jpg"
+                alt="Comfort House, live WooCommerce store selling bedding across Pakistan" width="780" height="2559"
+                loading="lazy" decoding="async"></a>
+            <div class="pbody">
+              <span class="pill">WooCommerce</span>
+              <h3>Comfort House</h3>
+              <p>My own live WooCommerce store selling bedsheets and comforter sets across Pakistan, with 35+ products
+                and Cash on Delivery checkout.</p>
+              <div class="links"><a href="https://comforthouse.pk" target="_blank" rel="noopener">View live site</a>
+              </div>
+            </div>
+          </div>
+          <div class="proj spot reveal" style="--d:120ms">
+            <a class="shot" href="https://github.com/umarhayat834/north-star-real-state" target="_blank" rel="noopener"
+              aria-label="North Star Real Estate website with property search and featured listings (opens in new tab)"><img
+                src="images/project-north-star.jpg"
+                alt="North Star Real Estate website with property search and featured listings" width="779"
+                height="2576" loading="lazy" decoding="async"></a>
+            <div class="pbody">
+              <span class="pill">Real estate</span>
+              <h3>North Star Real Estate</h3>
+              <p>A real estate website for Lahore with a property search, featured listings, and a newsletter sign-up.
+              </p>
+              <div class="links"><a href="https://umarhayat834.github.io/north-star-real-state/" target="_blank"
+                  rel="noopener">View live site</a><a href="https://github.com/umarhayat834/north-star-real-state"
+                  target="_blank" rel="noopener">View on GitHub</a></div>
+            </div>
+          </div>
+          <div class="proj spot reveal" style="--d:240ms">
+            <a class="shot" href="https://umarhayat834.github.io/Bitebox/" target="_blank" rel="noopener"
+              aria-label="Bitebox food ordering website with menu, custom box builder and order tracking (opens in new tab)"><img
+                src="images/project-bitebox.jpg"
+                alt="Bitebox food ordering website with menu, custom box builder and order tracking" width="456"
+                height="2576" loading="lazy" decoding="async"></a>
+            <div class="pbody">
+              <span class="pill">Food ordering</span>
+              <h3>Bitebox</h3>
+              <p>A food ordering website with a menu, a build-your-own-box option, a shopping bag, and order tracking.
+              </p>
+              <div class="links"><a href="https://umarhayat834.github.io/Bitebox/" target="_blank" rel="noopener">View
+                  live site</a><a href="https://github.com/umarhayat834/Bitebox" target="_blank" rel="noopener">View on
+                  GitHub</a></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div></section>
+    </section>
 
-<section id="services"><div class="wrap">
-  <p class="kicker reveal">What I do</p>
-  <h2 class="reveal">Services</h2>
-  <p class="sub reveal" style="--d:80ms">What I can do for your business.</p>
-  <div class="grid4">
-    <div class="svc spot reveal" style="--d:0ms"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/></svg></div><div><h3>WooCommerce and Shopify stores</h3><p>Product catalogue, categories and tags, sale pricing, cart and checkout, Cash on Delivery, wishlist and quick view, and order management, on WooCommerce or Shopify.</p></div></div>
-    <div class="svc spot reveal" style="--d:100ms"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></div><div><h3>WordPress websites</h3><p>Business websites built with Elementor Pro, Divi, or the Gutenberg block editor, with responsive, mobile-friendly layouts.</p></div></div>
-    <div class="svc spot reveal" style="--d:200ms"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div><div><h3>Security and hosting</h3><p>Wordfence firewall, malware scanning, and login protection, plus plugin and core updates, and site management through cPanel and SSH.</p></div></div>
-    <div class="svc spot reveal" style="--d:300ms"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M6 16V10M11 16V5M16 16v-4M21 16V8"/></svg></div><div><h3>Tracking and SEO</h3><p>Google Site Kit and Meta (Facebook) Pixel for traffic and ad tracking, and on-page SEO for product pages.</p></div></div>
-  </div>
-</div></section>
-
-<section id="skills" class="alt"><div class="wrap">
-  <p class="kicker reveal">Toolkit</p>
-  <h2 class="reveal">Skills</h2>
-  <p class="sub reveal" style="--d:80ms">What I use day to day to build and run live sites.</p>
-  <div class="sk">
-    <div class="reveal"><h3>CMS and builders</h3><div class="chips"><span>WordPress</span><span>Gutenberg</span><span>Elementor</span><span>Elementor Pro</span><span>Divi</span><span>Theme customisation</span></div></div>
-    <div class="reveal" style="--d:80ms"><h3>E-commerce</h3><div class="chips"><span>WooCommerce</span><span>Shopify</span><span>Categories and tags</span><span>Sale pricing</span><span>Cash on Delivery</span><span>Wishlist</span><span>Quick view</span><span>Order management</span><span>Shopify theme customisation</span><span>Shopify apps and payments</span></div></div>
-    <div class="reveal" style="--d:160ms"><h3>Security and hosting</h3><div class="chips"><span>Wordfence</span><span>Plugin and core updates</span><span>cPanel</span><span>SSH</span></div></div>
-    <div class="reveal"><h3>Marketing and SEO</h3><div class="chips"><span>Google Site Kit</span><span>Meta Pixel</span><span>On-page SEO</span><span>Social media promotion</span></div></div>
-    <div class="reveal" style="--d:80ms"><h3>Web basics</h3><div class="chips"><span>HTML5</span><span>CSS3</span><span>Responsive layouts</span></div></div>
-    <div class="reveal" style="--d:160ms"><h3>Languages</h3><div class="chips"><span>English</span><span>Urdu</span><span>Punjabi</span><span>French</span></div></div>
-  </div>
-</div></section>
-
-<section id="experience"><div class="wrap">
-  <p class="kicker reveal">Background</p>
-  <h2 class="reveal">Experience</h2>
-  <p class="sub reveal" style="--d:80ms">Running my own store has taught me every part of how an online business works.</p>
-  <div class="tl" id="tl">
-    <div class="ev reveal">
-      <span class="when">2026 to present</span>
-      <h3>Founder &amp; WordPress Developer</h3>
-      <p class="org">Comfort House, self-run online bedding store, <a href="https://comforthouse.pk" target="_blank" rel="noopener">comforthouse.pk</a></p>
-      <ul>
-        <li>Built and launched a live WooCommerce store on WordPress, selling bedsheets and comforter sets to customers across Pakistan.</li>
-        <li>Organised a catalogue of 35+ products across Bedsheets, Pure Cotton, and Comforter Set categories, with SEO-focused titles, product tags, and sale pricing.</li>
-        <li>Set up cart and checkout with Cash on Delivery, plus a wishlist, quick view, and a free-shipping promo bar to improve conversions.</li>
-        <li>Connected Google Site Kit and Meta Pixel to track traffic and ad performance, and secured the site with Wordfence.</li>
-        <li>Optimised the store for mobile and speed.</li>
-        <li>Handle daily operations: order fulfilment, customer service, supplier coordination, and social media marketing.</li>
-      </ul>
-    </div>
-    <div class="ev reveal">
-      <span class="when">2021</span>
-      <h3>BS (Hons) Mathematics</h3>
-      <p class="org">University of Sargodha</p>
-    </div>
-  </div>
-</div></section>
-
-<section id="contact" class="alt"><div class="wrap">
-  <p class="kicker reveal">Get in touch</p>
-  <h2 class="reveal">Contact</h2>
-  <p class="sub reveal" style="--d:80ms">Share your project details by email, WhatsApp, or GitHub, whichever is easiest for you.</p>
-  <div class="contact">
-    <div class="panel reveal">
-      <h3>Send project details</h3>
-      <label class="f" for="f-name">Your name</label>
-      <input class="in" id="f-name" type="text" autocomplete="name">
-      <label class="f" for="f-type">What do you need?</label>
-
-    <select class="in" id="f-type">
-  <option style="background:#120B26;color:#F5F3FF">WooCommerce online store</option>
-  <option style="background:#120B26;color:#F5F3FF">Shopify online store</option>
-  <option style="background:#120B26;color:#F5F3FF">New WordPress website</option>
-  <option style="background:#120B26;color:#F5F3FF">WordPress website redesign</option>
-  <option style="background:#120B26;color:#F5F3FF">Landing page</option>
-  <option style="background:#120B26;color:#F5F3FF">Speed optimization</option>
-  <option style="background:#120B26;color:#F5F3FF">Security, malware, or fixes</option>
-  <option style="background:#120B26;color:#F5F3FF">SEO and marketing setup</option>
-  <option style="background:#120B26;color:#F5F3FF">Migration or hosting setup</option>
-  <option style="background:#120B26;color:#F5F3FF">Something else</option>
-</select>
- <label class="f" for="f-msg">Project details</label>
-      <textarea class="in" id="f-msg" placeholder="Tell me about your business and what you need."></textarea>
-      <div class="btns">
-        <button class="btn fill" id="send-mail" type="button">Send by email</button>
-        <button class="btn" id="send-wa" type="button">Send on WhatsApp</button>
+    <section id="services">
+      <div class="wrap">
+        <p class="kicker reveal">What I do</p>
+        <h2 class="reveal">Services</h2>
+        <p class="sub reveal" style="--d:80ms">What I can do for your business.</p>
+        <div class="grid4">
+          <div class="svc spot reveal" style="--d:0ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="20" r="1.5" />
+                <circle cx="18" cy="20" r="1.5" />
+                <path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6" />
+              </svg></div>
+            <div>
+              <h3>WooCommerce and Shopify stores</h3>
+              <p>Product catalogue, categories and tags, sale pricing, cart and checkout, Cash on Delivery, wishlist and
+                quick view, and order management, on WooCommerce or Shopify.</p>
+            </div>
+          </div>
+          <div class="svc spot reveal" style="--d:100ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="16" rx="2" />
+                <path d="M3 9h18M7 6.5h.01M10 6.5h.01" />
+              </svg></div>
+            <div>
+              <h3>WordPress websites</h3>
+              <p>Business websites built with Elementor Pro, Divi, or the Gutenberg block editor, with responsive,
+                mobile-friendly layouts.</p>
+            </div>
+          </div>
+          <div class="svc spot reveal" style="--d:200ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg></div>
+            <div>
+              <h3>Security and hosting</h3>
+              <p>Wordfence firewall, malware scanning, and login protection, plus plugin and core updates, and site
+                management through cPanel and SSH.</p>
+            </div>
+          </div>
+          <div class="svc spot reveal" style="--d:300ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 20h18M6 16V10M11 16V5M16 16v-4M21 16V8" />
+              </svg></div>
+            <div>
+              <h3>Tracking and SEO</h3>
+              <p>Google Site Kit and Meta (Facebook) Pixel for traffic and ad tracking, and on-page SEO for product
+                pages.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="hint">This opens your email app or WhatsApp with the message ready. Nothing is sent until you press send there.</p>
-    </div>
-    <div class="panel spot reveal" style="--d:120ms">
-      <h3>Direct contact</h3>
-      <ul class="ways">
-        <li><small>Email</small><a href="mailto:contactwithumarhayat@gmail.com">contactwithumarhayat@gmail.com</a></li>
-        <li><small>WhatsApp</small><a href="https://wa.me/923104561634" target="_blank" rel="noopener">+92 310 4561634</a></li>
-        <li><small>GitHub</small><a href="https://github.com/umarhayat834" target="_blank" rel="noopener">github.com/umarhayat834</a></li>
-        <li><small>My store</small><a href="https://comforthouse.pk" target="_blank" rel="noopener">comforthouse.pk</a></li>
-      </ul>
-    </div>
+    </section>
+
+    <section id="skills" class="alt">
+      <div class="wrap">
+        <p class="kicker reveal">Toolkit</p>
+        <h2 class="reveal">Skills</h2>
+        <p class="sub reveal" style="--d:80ms">What I use day to day to build and run live sites.</p>
+          <div class="skl-top reveal">
+      <div class="skl-bar reveal" id="sklBar" role="group" aria-label="Highlight a skill category"></div>
   </div>
-</div></section>
-</main>
+  <div class="skm reveal" id="skm" role="img" aria-label="My skills"><div class="skm-band" id="skmBand"></div></div>
 
-<footer><div class="wrap"><span>&copy; 2026 Umar Hayat</span><a href="#top">Back to top</a></div></footer>
+    <section id="experience">
+      <div class="wrap">
+        <p class="kicker reveal">Background</p>
+        <h2 class="reveal">Experience</h2>
+        <p class="sub reveal" style="--d:80ms">Running my own store has taught me every part of how an online business
+          works.</p>
+        <div class="tl" id="tl">
+          <div class="ev reveal">
+            <span class="when">2026 to present</span>
+            <h3>Founder &amp; WordPress Developer</h3>
+            <p class="org">Comfort House, self-run online bedding store, <a href="https://comforthouse.pk"
+                target="_blank" rel="noopener">comforthouse.pk</a></p>
+            <ul>
+              <li>Built and launched a live WooCommerce store on WordPress, selling bedsheets and comforter sets to
+                customers across Pakistan.</li>
+              <li>Organised a catalogue of 35+ products across Bedsheets, Pure Cotton, and Comforter Set categories,
+                with SEO-focused titles, product tags, and sale pricing.</li>
+              <li>Set up cart and checkout with Cash on Delivery, plus a wishlist, quick view, and a free-shipping promo
+                bar to improve conversions.</li>
+              <li>Connected Google Site Kit and Meta Pixel to track traffic and ad performance, and secured the site
+                with Wordfence.</li>
+              <li>Optimised the store for mobile and speed.</li>
+              <li>Handle daily operations: order fulfilment, customer service, supplier coordination, and social media
+                marketing.</li>
+            </ul>
+          </div>
+          <div class="ev reveal">
+            <span class="when">2021</span>
+            <h3>BS (Hons) Mathematics</h3>
+            <p class="org">University of Sargodha</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="scrim" id="scrim" aria-hidden="true"></div>
-<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" aria-hidden="true">
-  <div class="dr-head"><h2 id="dr-title">Start a project</h2><button class="dr-x" id="dr-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
-  <div class="dr-prog"><p id="dr-msg" aria-live="polite">Choose what you need to get started.</p><div class="meter" aria-hidden="true"><i id="dr-bar"></i></div></div>
-  <div class="dr-body">
-    <p class="dr-h">What do you need?</p>
-    <div class="opts">
-      <label class="opt"><input type="checkbox" name="svc" value="WooCommerce online store"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/></svg></span><span><b>WooCommerce online store</b><small>Catalogue, checkout, Cash on Delivery, orders</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></label>
-            <label class="opt"><input type="checkbox" name="svc" value="Shopify online store"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span><span><b>Shopify website</b><small>Shopify store setup, theme, products, payments</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></label>
-      <label class="opt"><input type="checkbox" name="svc" value="WordPress business website"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></span><span><b>WordPress business website</b><small>Elementor Pro, Divi, or Gutenberg</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></label>
-      <label class="opt"><input type="checkbox" name="svc" value="Landing page"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg></span><span><b>Landing page</b><small>One focused page for an offer or event</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></label>
-      <label class="opt"><input type="checkbox" name="svc" value="Fixes, speed, or security for my site"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18l3 3 6.7-6.7a4 4 0 0 0 5-5l-2.4 2.4-2.6-.6-.6-2.6z"/></svg></span><span><b>Fixes, speed, or security</b><small>Improve a site you already have</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></label>
+    <section id="contact" class="alt">
+      <div class="wrap">
+        <p class="kicker reveal">Get in touch</p>
+        <h2 class="reveal">Contact</h2>
+        <p class="sub reveal" style="--d:80ms">Share your project details by email, WhatsApp, or GitHub, whichever is
+          easiest for you.</p>
+        <div class="contact">
+          <div class="panel reveal">
+            <h3>Send project details</h3>
+            <label class="f" for="f-name">Your name</label>
+            <input class="in" id="f-name" type="text" autocomplete="name">
+            <label class="f" for="f-type">What do you need?</label>
+
+            <select class="in" id="f-type">
+              <option style="background:#120B26;color:#F5F3FF">WooCommerce online store</option>
+              <option style="background:#120B26;color:#F5F3FF">Shopify online store</option>
+              <option style="background:#120B26;color:#F5F3FF">New WordPress website</option>
+              <option style="background:#120B26;color:#F5F3FF">WordPress website redesign</option>
+              <option style="background:#120B26;color:#F5F3FF">Landing page</option>
+              <option style="background:#120B26;color:#F5F3FF">Speed optimization</option>
+              <option style="background:#120B26;color:#F5F3FF">Security, malware, or fixes</option>
+              <option style="background:#120B26;color:#F5F3FF">SEO and marketing setup</option>
+              <option style="background:#120B26;color:#F5F3FF">Migration or hosting setup</option>
+              <option style="background:#120B26;color:#F5F3FF">Something else</option>
+            </select>
+            <label class="f" for="f-msg">Project details</label>
+            <textarea class="in" id="f-msg" placeholder="Tell me about your business and what you need."></textarea>
+            <div class="btns">
+              <button class="btn fill" id="send-mail" type="button">Send by email</button>
+              <button class="btn" id="send-wa" type="button">Send on WhatsApp</button>
+            </div>
+            <p class="hint">This opens your email app or WhatsApp with the message ready. Nothing is sent until you
+              press send there.</p>
+          </div>
+          <div class="panel spot reveal" style="--d:120ms">
+            <h3>Direct contact</h3>
+            <ul class="ways">
+              <li><small>Email</small><a href="mailto:contactwithumarhayat@gmail.com">contactwithumarhayat@gmail.com</a>
+              </li>
+              <li><small>WhatsApp</small><a href="https://wa.me/923104561634" target="_blank" rel="noopener">+92 310
+                  4561634</a></li>
+              <li><small>GitHub</small><a href="https://github.com/umarhayat834" target="_blank"
+                  rel="noopener">github.com/umarhayat834</a></li>
+              <li><small>My store</small><a href="https://comforthouse.pk" target="_blank"
+                  rel="noopener">comforthouse.pk</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><span>&copy; 2026 Umar Hayat</span><a href="#top">Back to top</a></div>
+  </footer>
+
+  <div class="scrim" id="scrim" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" aria-hidden="true">
+    <div class="dr-head">
+      <h2 id="dr-title">Start a project</h2><button class="dr-x" id="dr-close" type="button" aria-label="Close"><svg
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+          aria-hidden="true">
+          <path d="M5 5l14 14M19 5L5 19" />
+        </svg></button>
     </div>
-    <p class="dr-h">Add-ons</p>
-    <div class="opts">
-      <label class="opt addon"><input type="checkbox" name="add" value="Google Site Kit and Meta Pixel tracking"><span><b>Add tracking</b><small>Google Site Kit and Meta Pixel</small></span><span class="tg" aria-hidden="true"></span></label>
-      <label class="opt addon"><input type="checkbox" name="add" value="Wordfence security setup"><span><b>Add security</b><small>Wordfence firewall and malware scanning</small></span><span class="tg" aria-hidden="true"></span></label>
-      <label class="opt addon"><input type="checkbox" name="add" value="On-page SEO for product pages"><span><b>Add SEO</b><small>On-page SEO for product pages</small></span><span class="tg" aria-hidden="true"></span></label>
+    <div class="dr-prog">
+      <p id="dr-msg" aria-live="polite">Choose what you need to get started.</p>
+      <div class="meter" aria-hidden="true"><i id="dr-bar"></i></div>
     </div>
-    <p class="dr-h">About you</p>
-    <label class="f" for="dr-name">Your name</label>
-    <input class="in" id="dr-name" type="text" autocomplete="name">
-    <div class="two">
-      <div><label class="f" for="dr-email">Email</label><input class="in" id="dr-email" type="email" autocomplete="email"></div>
-      <div><label class="f" for="dr-phone">WhatsApp number</label><input class="in" id="dr-phone" type="tel" autocomplete="tel" placeholder="+92 ..."></div>
+    <div class="dr-body">
+      <p class="dr-h">What do you need?</p>
+      <div class="opts">
+        <label class="opt"><input type="checkbox" name="svc" value="WooCommerce online store"><span class="ico"><svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="20" r="1.5" />
+              <circle cx="18" cy="20" r="1.5" />
+              <path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6" />
+            </svg></span><span><b>WooCommerce online store</b><small>Catalogue, checkout, Cash on Delivery,
+              orders</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="Shopify online store"><span class="ico"><svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 8h14l-1 12H6L5 8z" />
+              <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+            </svg></span><span><b>Shopify website</b><small>Shopify store setup, theme, products,
+              payments</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="WordPress business website"><span class="ico"><svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="16" rx="2" />
+              <path d="M3 9h18M7 6.5h.01M10 6.5h.01" />
+            </svg></span><span><b>WordPress business website</b><small>Elementor Pro, Divi, or
+              Gutenberg</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="Landing page"><span class="ico"><svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 3h9l4 4v14H6z" />
+              <path d="M14 3v5h5M9 13h7M9 17h7" />
+            </svg></span><span><b>Landing page</b><small>One focused page for an offer or event</small></span><span
+            class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="Fixes, speed, or security for my site"><span
+            class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.7 6.3a4 4 0 0 0-5 5L3 18l3 3 6.7-6.7a4 4 0 0 0 5-5l-2.4 2.4-2.6-.6-.6-2.6z" />
+            </svg></span><span><b>Fixes, speed, or security</b><small>Improve a site you already
+              have</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg></span></label>
+      </div>
+      <p class="dr-h">Add-ons</p>
+      <div class="opts">
+        <label class="opt addon"><input type="checkbox" name="add"
+            value="Google Site Kit and Meta Pixel tracking"><span><b>Add tracking</b><small>Google Site Kit and Meta
+              Pixel</small></span><span class="tg" aria-hidden="true"></span></label>
+        <label class="opt addon"><input type="checkbox" name="add" value="Wordfence security setup"><span><b>Add
+              security</b><small>Wordfence firewall and malware scanning</small></span><span class="tg"
+            aria-hidden="true"></span></label>
+        <label class="opt addon"><input type="checkbox" name="add" value="On-page SEO for product pages"><span><b>Add
+              SEO</b><small>On-page SEO for product pages</small></span><span class="tg"
+            aria-hidden="true"></span></label>
+      </div>
+      <p class="dr-h">About you</p>
+      <label class="f" for="dr-name">Your name</label>
+      <input class="in" id="dr-name" type="text" autocomplete="name">
+      <div class="two">
+        <div><label class="f" for="dr-email">Email</label><input class="in" id="dr-email" type="email"
+            autocomplete="email"></div>
+        <div><label class="f" for="dr-phone">WhatsApp number</label><input class="in" id="dr-phone" type="tel"
+            autocomplete="tel" placeholder="+92 ..."></div>
+      </div>
+      <p class="dr-h">Your project</p>
+      <div class="two">
+        <div><label class="f" for="dr-budget">Budget (optional)</label><input class="in" id="dr-budget" type="text"
+            placeholder="For example 50,000 PKR"></div>
+        <div><label class="f" for="dr-time">When do you need it?</label>
+          <select class="in" id="dr-time">
+            <option>As soon as possible</option>
+            <option>Within 2 weeks</option>
+            <option>Within a month</option>
+            <option>No fixed deadline</option>
+          </select>
+        </div>
+      </div>
+      <label class="f" for="dr-site">Your current website (optional)</label>
+      <input class="in" id="dr-site" type="url" placeholder="https://">
+      <label class="f" for="dr-msg2">Project details</label>
+      <textarea class="in" id="dr-msg2"
+        placeholder="Tell me about your business, what you want to sell or show, and anything else I should know."></textarea>
     </div>
-    <p class="dr-h">Your project</p>
-    <div class="two">
-      <div><label class="f" for="dr-budget">Budget (optional)</label><input class="in" id="dr-budget" type="text" placeholder="For example 50,000 PKR"></div>
-      <div><label class="f" for="dr-time">When do you need it?</label>
-        <select class="in" id="dr-time"><option>As soon as possible</option><option>Within 2 weeks</option><option>Within a month</option><option>No fixed deadline</option></select></div>
+    <div class="dr-foot">
+      <div class="sumrow"><span>Items selected</span><strong id="dr-count">0</strong></div>
+      <p class="dr-hint" id="dr-hint">This opens WhatsApp or your email app with your brief ready. Nothing is sent until
+        you press send there.</p>
+      <button class="btn fill" id="dr-wa" type="button" disabled>Send brief on WhatsApp</button>
+      <button class="btn out" id="dr-mail" type="button" disabled>Send brief by email</button>
     </div>
-    <label class="f" for="dr-site">Your current website (optional)</label>
-    <input class="in" id="dr-site" type="url" placeholder="https://">
-    <label class="f" for="dr-msg2">Project details</label>
-    <textarea class="in" id="dr-msg2" placeholder="Tell me about your business, what you want to sell or show, and anything else I should know."></textarea>
-  </div>
-  <div class="dr-foot">
-    <div class="sumrow"><span>Items selected</span><strong id="dr-count">0</strong></div>
-    <p class="dr-hint" id="dr-hint">This opens WhatsApp or your email app with your brief ready. Nothing is sent until you press send there.</p>
-    <button class="btn fill" id="dr-wa" type="button" disabled>Send brief on WhatsApp</button>
-    <button class="btn out" id="dr-mail" type="button" disabled>Send brief by email</button>
-  </div>
-</aside>
+  </aside>
 
-<script>
-(function(){
-  var EMAIL="contactwithumarhayat@gmail.com",WA="923104561634";
-  function compose(){
-    var n=document.getElementById("f-name").value.trim(),
-        t=document.getElementById("f-type").value,
-        m=document.getElementById("f-msg").value.trim();
-    return {subject:"Project enquiry: "+t,
-      body:"Hi Umar,\n\n"+(n?"My name is "+n+".\n":"")+"I need: "+t+"\n\nProject details:\n"+(m||"(I will share more details soon.)")+"\n"};
-  }
-  document.getElementById("send-mail").addEventListener("click",function(){
-    var c=compose();
-    window.location.href="mailto:"+EMAIL+"?subject="+encodeURIComponent(c.subject)+"&body="+encodeURIComponent(c.body);
-  });
-  document.getElementById("send-wa").addEventListener("click",function(){
-    var c=compose();
-    window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(c.subject+"\n\n"+c.body),"_blank","noopener");
-  });
-})();
-</script>
-<script>
-(function(){
-  var d=document,reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var fine=window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-  var $=function(id){return d.getElementById(id)};
-  var hero=$("hero"),h1=$("h1");
+  <script>
+    (function () {
+      var EMAIL = "contactwithumarhayat@gmail.com", WA = "923104561634";
+      function compose() {
+        var n = document.getElementById("f-name").value.trim(),
+          t = document.getElementById("f-type").value,
+          m = document.getElementById("f-msg").value.trim();
+        return {
+          subject: "Project enquiry: " + t,
+          body: "Hi Umar,\n\n" + (n ? "My name is " + n + ".\n" : "") + "I need: " + t + "\n\nProject details:\n" + (m || "(I will share more details soon.)") + "\n"
+        };
+      }
+      document.getElementById("send-mail").addEventListener("click", function () {
+        var c = compose();
+        window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(c.subject) + "&body=" + encodeURIComponent(c.body);
+      });
+      document.getElementById("send-wa").addEventListener("click", function () {
+        var c = compose();
+        window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(c.subject + "\n\n" + c.body), "_blank", "noopener");
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      var d = document, reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+      var $ = function (id) { return d.getElementById(id) };
+      var hero = $("hero"), h1 = $("h1");
 
-  /* hero headline: word-by-word reveal */
-  if(!reduce){
-    var txt=h1.textContent.trim(),words=txt.split(/\s+/);
-    h1.setAttribute("aria-label",txt);
-    h1.innerHTML=words.map(function(w,i){return '<span class="w'+(i>1?' g':'')+'" aria-hidden="true"><span style="--i:'+i+'">'+w+'</span></span>'}).join(" ");
-    requestAnimationFrame(function(){requestAnimationFrame(function(){h1.classList.add("ready");hero.classList.add("go")})});
-  }else{hero.classList.add("go")}
+      /* hero headline: word-by-word reveal */
+      if (!reduce) {
+        var txt = h1.textContent.trim(), words = txt.split(/\s+/);
+        h1.setAttribute("aria-label", txt);
+        h1.innerHTML = words.map(function (w, i) { return '<span class="w' + (i > 1 ? ' g' : '') + '" aria-hidden="true"><span style="--i:' + i + '">' + w + '</span></span>' }).join(" ");
+        requestAnimationFrame(function () { requestAnimationFrame(function () { h1.classList.add("ready"); hero.classList.add("go") }) });
+      } else { hero.classList.add("go") }
 
-  /* marquee */
-  var words2=["WordPress","WooCommerce","Shopify","Elementor Pro","Divi","Gutenberg","cPanel","Wordfence","Google Site Kit","Meta Pixel","On-page SEO"];
-  $("track").innerHTML=words2.concat(words2).map(function(w){return "<span>"+w+"</span>"}).join("");
+      /* marquee */
+      var words2 = ["WordPress", "WooCommerce", "Shopify", "Elementor Pro", "Divi", "Gutenberg", "cPanel", "Wordfence", "Google Site Kit", "Meta Pixel", "On-page SEO"];
+      $("track").innerHTML = words2.concat(words2).map(function (w) { return "<span>" + w + "</span>" }).join("");
 
-  /* reveal on scroll */
-  var items=[].slice.call(d.querySelectorAll(".reveal"));
-  if("IntersectionObserver" in window&&!reduce){
-    var io=new IntersectionObserver(function(es){
-      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("shown");io.unobserve(e.target)}});
-    },{threshold:.12,rootMargin:"0px 0px -6% 0px"});
-    items.forEach(function(el){io.observe(el)});
-  }else{items.forEach(function(el){el.classList.add("shown")})}
+      /* reveal on scroll */
+      var items = [].slice.call(d.querySelectorAll(".reveal"));
+      if ("IntersectionObserver" in window && !reduce) {
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("shown"); io.unobserve(e.target) } });
+        }, { threshold: .12, rootMargin: "0px 0px -6% 0px" });
+        items.forEach(function (el) { io.observe(el) });
+      } else { items.forEach(function (el) { el.classList.add("shown") }) }
 
-  /* counters */
-  var nums=[].slice.call(d.querySelectorAll("[data-n]"));
-  function count(el){
-    var n=+el.dataset.n,s=el.dataset.s||"",t0=null,dur=1400;
-    function step(t){
-      if(t0===null)t0=t;
-      var p=Math.min((t-t0)/dur,1),e=1-Math.pow(1-p,3);
-      el.textContent=Math.round(n*e)+(p===1?s:"");
-      if(p<1)requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-  if("IntersectionObserver" in window&&!reduce){
-    var co=new IntersectionObserver(function(es){
-      es.forEach(function(e){if(e.isIntersecting){count(e.target);co.unobserve(e.target)}});
-    },{threshold:.6});
-    nums.forEach(function(el){co.observe(el)});
-  }
+      /* counters */
+      var nums = [].slice.call(d.querySelectorAll("[data-n]"));
+      function count(el) {
+        var n = +el.dataset.n, s = el.dataset.s || "", t0 = null, dur = 1400;
+        function step(t) {
+          if (t0 === null) t0 = t;
+          var p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(n * e) + (p === 1 ? s : "");
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+      if ("IntersectionObserver" in window && !reduce) {
+        var co = new IntersectionObserver(function (es) {
+          es.forEach(function (e) { if (e.isIntersecting) { count(e.target); co.unobserve(e.target) } });
+        }, { threshold: .6 });
+        nums.forEach(function (el) { co.observe(el) });
+      }
 
-  /* scroll-linked: progress bar, header, parallax, timeline, active nav */
-  var bar=$("bar"),hdr=$("hdr"),tl=$("tl"),ticking=false;
-  function onScroll(){
-    var y=window.pageYOffset||0,max=Math.max(d.documentElement.scrollHeight-window.innerHeight,1);
-    bar.style.setProperty("--p",Math.min(y/max,1).toFixed(4));
-    hdr.classList.toggle("scrolled",y>30);
-    if(!reduce){
-      hero.style.setProperty("--py",(y*.18).toFixed(1));
-      var r=tl.getBoundingClientRect(),p=(window.innerHeight*.65-r.top)/r.height;
-      tl.style.setProperty("--tp",Math.max(0,Math.min(1,p)).toFixed(3));
-    }
-    ticking=false;
-  }
-  window.addEventListener("scroll",function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
-  onScroll();
+      /* scroll-linked: progress bar, header, parallax, timeline, active nav */
+      var bar = $("bar"), hdr = $("hdr"), tl = $("tl"), ticking = false;
+      function onScroll() {
+        var y = window.pageYOffset || 0, max = Math.max(d.documentElement.scrollHeight - window.innerHeight, 1);
+        bar.style.setProperty("--p", Math.min(y / max, 1).toFixed(4));
+        hdr.classList.toggle("scrolled", y > 30);
+        if (!reduce) {
+          hero.style.setProperty("--py", (y * .18).toFixed(1));
+          var r = tl.getBoundingClientRect(), p = (window.innerHeight * .65 - r.top) / r.height;
+          tl.style.setProperty("--tp", Math.max(0, Math.min(1, p)).toFixed(3));
+        }
+        ticking = false;
+      }
+      window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll) } }, { passive: true });
+      onScroll();
 
-  var links={};
-  [].forEach.call(d.querySelectorAll(".menu a.l"),function(a){links[a.getAttribute("href").slice(1)]=a});
-  if("IntersectionObserver" in window){
-    var spy=new IntersectionObserver(function(es){
-      es.forEach(function(e){
-        if(e.isIntersecting){
-          Object.keys(links).forEach(function(k){links[k].classList.remove("active");links[k].removeAttribute("aria-current")});
-          var a=links[e.target.id];if(a){a.classList.add("active");a.setAttribute("aria-current","true")}
+      var links = {};
+      [].forEach.call(d.querySelectorAll(".menu a.l"), function (a) { links[a.getAttribute("href").slice(1)] = a });
+      if ("IntersectionObserver" in window) {
+        var spy = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            if (e.isIntersecting) {
+              Object.keys(links).forEach(function (k) { links[k].classList.remove("active"); links[k].removeAttribute("aria-current") });
+              var a = links[e.target.id]; if (a) { a.classList.add("active"); a.setAttribute("aria-current", "true") }
+            }
+          });
+        }, { rootMargin: "-45% 0px -50% 0px" });
+        Object.keys(links).forEach(function (id) { var s = $(id); if (s) spy.observe(s) });
+      }
+
+      /* mobile menu */
+      var burger = $("burger"), menu = d.querySelector(".menu");
+      if (burger) {
+        var setMenu = function (open) {
+          hdr.classList.toggle("menu-open", open);
+          burger.setAttribute("aria-expanded", open ? "true" : "false");
+        };
+        burger.addEventListener("click", function () { setMenu(!hdr.classList.contains("menu-open")) });
+        menu.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false) });
+        d.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false) });
+        window.addEventListener("resize", function () { if (window.innerWidth > 900) setMenu(false) });
+      }
+
+      /* pointer effects (mouse only) */
+      if (fine && !reduce) {
+        var cur = $("cursor"), cx = 0, cy = 0, pend = false;
+        d.addEventListener("pointermove", function (e) {
+          cx = e.clientX; cy = e.clientY;
+          if (!pend) { pend = true; requestAnimationFrame(function () { cur.style.transform = "translate(" + cx + "px," + cy + "px)"; cur.classList.add("on"); pend = false }) }
+          var s = e.target.closest && e.target.closest(".spot");
+          if (s) { var r = s.getBoundingClientRect(); s.style.setProperty("--mx", (e.clientX - r.left) + "px"); s.style.setProperty("--my", (e.clientY - r.top) + "px") }
+        }, { passive: true });
+        d.addEventListener("pointerleave", function () { cur.classList.remove("on") });
+
+        [].forEach.call(d.querySelectorAll(".proj"), function (c) {
+          c.addEventListener("pointermove", function (e) {
+            var r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+            c.style.setProperty("--ry", (x * 6).toFixed(2) + "deg");
+            c.style.setProperty("--rx", (-y * 6).toFixed(2) + "deg");
+          });
+          c.addEventListener("pointerleave", function () { c.style.removeProperty("--rx"); c.style.removeProperty("--ry") });
+        });
+
+        [].forEach.call(d.querySelectorAll(".mag"), function (b) {
+          b.addEventListener("pointermove", function (e) {
+            var r = b.getBoundingClientRect();
+            b.style.translate = ((e.clientX - r.left - r.width / 2) * .25).toFixed(1) + "px " + ((e.clientY - r.top - r.height / 2) * .35).toFixed(1) + "px";
+          });
+          b.addEventListener("pointerleave", function () { b.style.translate = "" });
+        });
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      var d = document, root = d.documentElement, $ = function (id) { return d.getElementById(id) };
+      var drawer = $("drawer"), last = null;
+      var EMAIL = "contactwithumarhayat@gmail.com", WA = "923104561634";
+      function val(id) { return $(id).value.trim() }
+      function checked(n) { return [].map.call(d.querySelectorAll('input[name="' + n + '"]:checked'), function (i) { return i.value }) }
+      function state() {
+        var svc = checked("svc"), add = checked("add");
+        var steps = [
+          { ok: svc.length > 0, msg: "Choose at least one thing you need" },
+          { ok: !!val("dr-name"), msg: "Add your name" },
+          { ok: !!(val("dr-email") || val("dr-phone")), msg: "Add your email or WhatsApp number" },
+          { ok: !!val("dr-msg2"), msg: "Tell me a little about your project" }
+        ];
+        var done = steps.filter(function (s) { return s.ok }).length;
+        var next = steps.filter(function (s) { return !s.ok })[0];
+        return { svc: svc, add: add, done: done, ready: done === 4, next: next };
+      }
+      function update() {
+        var s = state();
+        $("dr-bar").style.width = (s.done / 4 * 100) + "%";
+        $("dr-count").textContent = s.svc.length + s.add.length;
+        $("dr-msg").textContent = s.ready ? "Your brief is ready to send." : s.next.msg + " (" + s.done + " of 4 done)";
+        $("dr-wa").disabled = !s.ready; $("dr-mail").disabled = !s.ready;
+      }
+      function brief() {
+        var s = state(), L = [];
+        L.push("Hi Umar,", "", "I would like to start a project.", "");
+        L.push("Name: " + val("dr-name"));
+        if (val("dr-email")) L.push("Email: " + val("dr-email"));
+        if (val("dr-phone")) L.push("WhatsApp: " + val("dr-phone"));
+        L.push("", "I need: " + s.svc.join(", "));
+        if (s.add.length) L.push("Add-ons: " + s.add.join(", "));
+        if (val("dr-budget")) L.push("Budget: " + val("dr-budget"));
+        L.push("Timeline: " + $("dr-time").value);
+        if (val("dr-site")) L.push("Current website: " + val("dr-site"));
+        L.push("", "Project details:", val("dr-msg2"), "");
+        return { subject: "Project enquiry: " + s.svc.join(", "), body: L.join("\n") };
+      }
+      function open() {
+        last = d.activeElement;
+        root.classList.add("dr-open");
+        drawer.setAttribute("aria-hidden", "false");
+        var body = drawer.querySelector(".dr-body");
+        if (body) body.scrollTop = 0;
+        setTimeout(function () { $("dr-close").focus() }, 60);
+      }
+      function close() {
+        root.classList.remove("dr-open");
+        drawer.setAttribute("aria-hidden", "true");
+        if (last && last.focus) last.focus();
+      }
+      [].forEach.call(d.querySelectorAll('[data-open="brief"]'), function (a) {
+        a.addEventListener("click", function (e) { e.preventDefault(); open() });
+      });
+      $("scrim").addEventListener("click", close);
+      $("dr-close").addEventListener("click", close);
+      d.addEventListener("keydown", function (e) {
+        if (!root.classList.contains("dr-open")) return;
+        if (e.key === "Escape") { close(); return }
+        if (e.key === "Tab") {
+          var f = [].filter.call(drawer.querySelectorAll('button,input,select,textarea,a[href]'), function (el) { return !el.disabled && el.offsetParent !== null });
+          if (!f.length) return;
+          var a = f[0], z = f[f.length - 1];
+          if (e.shiftKey && d.activeElement === a) { e.preventDefault(); z.focus() }
+          else if (!e.shiftKey && d.activeElement === z) { e.preventDefault(); a.focus() }
         }
       });
-    },{rootMargin:"-45% 0px -50% 0px"});
-    Object.keys(links).forEach(function(id){var s=$(id);if(s)spy.observe(s)});
-  }
-
-  /* mobile menu */
-  var burger=$("burger"),menu=d.querySelector(".menu");
-  if(burger){
-    var setMenu=function(open){
-      hdr.classList.toggle("menu-open",open);
-      burger.setAttribute("aria-expanded",open?"true":"false");
-    };
-    burger.addEventListener("click",function(){setMenu(!hdr.classList.contains("menu-open"))});
-    menu.addEventListener("click",function(e){if(e.target.closest("a"))setMenu(false)});
-    d.addEventListener("keydown",function(e){if(e.key==="Escape")setMenu(false)});
-    window.addEventListener("resize",function(){if(window.innerWidth>900)setMenu(false)});
-  }
-
-  /* pointer effects (mouse only) */
-  if(fine&&!reduce){
-    var cur=$("cursor"),cx=0,cy=0,pend=false;
-    d.addEventListener("pointermove",function(e){
-      cx=e.clientX;cy=e.clientY;
-      if(!pend){pend=true;requestAnimationFrame(function(){cur.style.transform="translate("+cx+"px,"+cy+"px)";cur.classList.add("on");pend=false})}
-      var s=e.target.closest&&e.target.closest(".spot");
-      if(s){var r=s.getBoundingClientRect();s.style.setProperty("--mx",(e.clientX-r.left)+"px");s.style.setProperty("--my",(e.clientY-r.top)+"px")}
-    },{passive:true});
-    d.addEventListener("pointerleave",function(){cur.classList.remove("on")});
-
-    [].forEach.call(d.querySelectorAll(".proj"),function(c){
-      c.addEventListener("pointermove",function(e){
-        var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
-        c.style.setProperty("--ry",(x*6).toFixed(2)+"deg");
-        c.style.setProperty("--rx",(-y*6).toFixed(2)+"deg");
+      drawer.addEventListener("input", update);
+      drawer.addEventListener("change", update);
+      $("dr-wa").addEventListener("click", function () {
+        var b = brief();
+        window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(b.subject + "\n\n" + b.body), "_blank", "noopener");
       });
-      c.addEventListener("pointerleave",function(){c.style.removeProperty("--rx");c.style.removeProperty("--ry")});
-    });
-
-    [].forEach.call(d.querySelectorAll(".mag"),function(b){
-      b.addEventListener("pointermove",function(e){
-        var r=b.getBoundingClientRect();
-        b.style.translate=((e.clientX-r.left-r.width/2)*.25).toFixed(1)+"px "+((e.clientY-r.top-r.height/2)*.35).toFixed(1)+"px";
+      $("dr-mail").addEventListener("click", function () {
+        var b = brief();
+        window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(b.subject) + "&body=" + encodeURIComponent(b.body);
       });
-      b.addEventListener("pointerleave",function(){b.style.translate=""});
-    });
-  }
-})();
-</script>
-<script>
+      update();
+    })();
+  </script>
+  <script>
 (function(){
-  var d=document,root=d.documentElement,$=function(id){return d.getElementById(id)};
-  var drawer=$("drawer"),last=null;
-  var EMAIL="contactwithumarhayat@gmail.com",WA="923104561634";
-  function val(id){return $(id).value.trim()}
-  function checked(n){return [].map.call(d.querySelectorAll('input[name="'+n+'"]:checked'),function(i){return i.value})}
-  function state(){
-    var svc=checked("svc"),add=checked("add");
-    var steps=[
-      {ok:svc.length>0,msg:"Choose at least one thing you need"},
-      {ok:!!val("dr-name"),msg:"Add your name"},
-      {ok:!!(val("dr-email")||val("dr-phone")),msg:"Add your email or WhatsApp number"},
-      {ok:!!val("dr-msg2"),msg:"Tell me a little about your project"}
-    ];
-    var done=steps.filter(function(s){return s.ok}).length;
-    var next=steps.filter(function(s){return !s.ok})[0];
-    return {svc:svc,add:add,done:done,ready:done===4,next:next};
-  }
-  function update(){
-    var s=state();
-    $("dr-bar").style.width=(s.done/4*100)+"%";
-    $("dr-count").textContent=s.svc.length+s.add.length;
-    $("dr-msg").textContent=s.ready?"Your brief is ready to send.":s.next.msg+" ("+s.done+" of 4 done)";
-    $("dr-wa").disabled=!s.ready;$("dr-mail").disabled=!s.ready;
-  }
-  function brief(){
-    var s=state(),L=[];
-    L.push("Hi Umar,","","I would like to start a project.","");
-    L.push("Name: "+val("dr-name"));
-    if(val("dr-email"))L.push("Email: "+val("dr-email"));
-    if(val("dr-phone"))L.push("WhatsApp: "+val("dr-phone"));
-    L.push("","I need: "+s.svc.join(", "));
-    if(s.add.length)L.push("Add-ons: "+s.add.join(", "));
-    if(val("dr-budget"))L.push("Budget: "+val("dr-budget"));
-    L.push("Timeline: "+$("dr-time").value);
-    if(val("dr-site"))L.push("Current website: "+val("dr-site"));
-    L.push("","Project details:",val("dr-msg2"),"");
-    return {subject:"Project enquiry: "+s.svc.join(", "),body:L.join("\n")};
-  }
-  function open(){
-  last=d.activeElement;
-  root.classList.add("dr-open");
-  drawer.setAttribute("aria-hidden","false");
-  var body=drawer.querySelector(".dr-body");
-  if(body) body.scrollTop=0;
-  setTimeout(function(){$("dr-close").focus()},60);
-}
-  function close(){
-    root.classList.remove("dr-open");
-    drawer.setAttribute("aria-hidden","true");
-    if(last&&last.focus)last.focus();
-  }
-  [].forEach.call(d.querySelectorAll('[data-open="brief"]'),function(a){
-    a.addEventListener("click",function(e){e.preventDefault();open()});
+  var ic=['<path d="M4 5h16v14H4z"/><path d="M4 9h16M9 9v10"/>','<path d="M6 7h14l-1.5 9H8L6 3H3"/><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/>','<path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/>','<path d="M3 20h18M6 16V10M11 16V5M16 16v-4M21 16V8"/>','<path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/>'];
+  /* EDIT YOUR SKILLS HERE */
+  var cats=[
+    ["CMS and builders",["WordPress","Gutenberg","Elementor","Elementor Pro","Divi","Theme customisation"]],
+    ["E-commerce",["WooCommerce","Shopify","Categories and tags","Sale pricing","Cash on Delivery","Wishlist","Quick view","Order management","Shopify theme customisation","Shopify apps and payments"]],
+    ["Security and hosting",["Wordfence","Plugin and core updates","cPanel","SSH"]],
+    ["Marketing and SEO",["Google Site Kit","Meta Pixel","On-page SEO","Social media promotion"]],
+    ["Web basics",["HTML5","CSS3","Responsive layouts"]]
+  ];
+  var bar=document.getElementById("sklBar"),band=document.getElementById("skmBand"),skm=document.getElementById("skm");
+  if(!bar||!band)return;
+  var all=[],rows=[[],[],[]],btns=[],reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  cats.forEach(function(c,i){
+    var b=document.createElement("button");b.type="button";b.className="skl";b.setAttribute("data-c",i);b.setAttribute("aria-pressed","false");
+    b.innerHTML="<b></b>"+c[0];bar.appendChild(b);btns.push(b);
+    c[1].forEach(function(n){all.push([i,n])});
   });
-  $("scrim").addEventListener("click",close);
-  $("dr-close").addEventListener("click",close);
-  d.addEventListener("keydown",function(e){
-    if(!root.classList.contains("dr-open"))return;
-    if(e.key==="Escape"){close();return}
-    if(e.key==="Tab"){
-      var f=[].filter.call(drawer.querySelectorAll('button,input,select,textarea,a[href]'),function(el){return !el.disabled&&el.offsetParent!==null});
-      if(!f.length)return;
-      var a=f[0],z=f[f.length-1];
-      if(e.shiftKey&&d.activeElement===a){e.preventDefault();z.focus()}
-      else if(!e.shiftKey&&d.activeElement===z){e.preventDefault();a.focus()}
-    }
+  all.forEach(function(s,k){rows[k%3].push(s)});
+  skm.setAttribute("aria-label","Skills: "+all.map(function(s){return s[1]}).join(", "));
+  var cls=["a","b rev","c"];
+  rows.forEach(function(r,i){
+    var h=r.map(function(s){return '<span data-c="'+s[0]+'"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+ic[s[0]]+'</svg></i>'+s[1]+'</span>'}).join("");
+    var d=document.createElement("div");d.className="skm-row "+cls[i];d.setAttribute("aria-hidden","true");d.innerHTML=h+h;band.appendChild(d);
   });
-  drawer.addEventListener("input",update);
-  drawer.addEventListener("change",update);
-  $("dr-wa").addEventListener("click",function(){
-    var b=brief();
-    window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(b.subject+"\n\n"+b.body),"_blank","noopener");
+  btns.forEach(function(b){
+    b.addEventListener("click",function(){
+      var on=b.getAttribute("aria-pressed")==="true",c=b.getAttribute("data-c");
+      btns.forEach(function(x){x.setAttribute("aria-pressed","false")});
+      if(!on)b.setAttribute("aria-pressed","true");
+      [].forEach.call(band.querySelectorAll("span"),function(sp){sp.classList.toggle("dim",!on&&sp.getAttribute("data-c")!==c)});
+    });
   });
-  $("dr-mail").addEventListener("click",function(){
-    var b=brief();
-    window.location.href="mailto:"+EMAIL+"?subject="+encodeURIComponent(b.subject)+"&body="+encodeURIComponent(b.body);
-  });
-  update();
+  if(reduce)return;
+  /* strip slows down smoothly while the mouse is over it */
+  var rowEls=[].slice.call(band.children),rate=1,target=1;
+  skm.addEventListener("pointerenter",function(e){if(e.pointerType==="mouse")target=.08});
+  skm.addEventListener("pointerleave",function(){target=1});
+  (function tick(){
+    rate+=(target-rate)*.06;
+    rowEls.forEach(function(r){var a=r.getAnimations()[0];if(a)a.playbackRate=rate});
+    requestAnimationFrame(tick);
+  })();
 })();
 </script>
 </body>
+
 </html>
